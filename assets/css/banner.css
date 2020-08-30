@@ -1,0 +1,103 @@
+#banner{
+    background-image: url('../img/engenheiros.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 670px;
+}
+
+.bannerheadline{
+    position: relative;
+    top: 4rem;
+    left: 2rem;
+}
+
+.bannerheadline h2{
+    display: block;
+    font: normal normal 500 1.5rem/2rem var(--font-secundary);
+    color: #fff;
+    text-shadow: 1px 1px 0 #333;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+    height: 100%;
+}
+
+#banner .banner-bottom{
+   position: absolute;
+   bottom: 0;
+   height: 40rem;
+   z-index: 5;
+   display: flex;
+}
+
+.banneroptions{
+    height: 210px;
+    display: flex;
+}
+
+.banneroptions:nth-of-type(3){
+    position: relative;
+    bottom: 0;
+    top: 8rem;
+}
+
+.banneroptions:nth-of-type(2){
+    position: relative;
+    top: 8rem
+}
+
+.banner1, .banner2, .banner3, .banner4, .banner5, .banner6{
+    flex: 1;
+    color: #fff;
+    padding: 20px;
+}
+.banner4, .banner1{
+    background-color: #6eff45;
+}
+.banner5, .banner2{
+    background-color: #3ed715;
+}
+.banner3, .banner6{
+    background-color: #0ea700;
+}
+
+.banneroptions .bannertitle{
+    font-size: 1.4rem;
+    word-spacing: .2rem
+}
+.banneroptions .bannerdesc{
+    font-size: 1rem;
+    line-height: 1.6rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#banner .column .banneroptions .saibamais{
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 5px;
+    font-size: 12px;
+    color: #fff;
+}
+/*Identação*/
+@media (max-width:750px){
+    #banner .column .bannerheadline h1{
+        font-size: 35px
+    }
+    #banner .column .bannerheadline h2{
+    }
+}
+@media (max-width:550px){
+    
+}
+@media (max-width:400px){
+    
+}
+@media (max-width:380px){
+    
+}
+@media (max-width:340px){
+
+}
+@media (max-width:300px){
+
+}

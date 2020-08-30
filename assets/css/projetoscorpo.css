@@ -1,0 +1,24 @@
+.projetoscorpo{
+    display: flex;
+    justify-content: space-between
+}
+.projetoscorpo .projetoscorpocentral{
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.projetoscorpocentral .projcorptext{
+    line-height: 25px;
+    text-align: justify;
+}
+.projetoscorpo aside{
+    flex: 2;
+}
+.projetoscorpo aside .projcorpasidesquare{
+    height: 200px;
+    width: 360px;
+    background-color: #3ed715;
+    margin: 10px;
+}

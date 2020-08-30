@@ -1,0 +1,128 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font: normal normal 400 16px/18px var(--font-secundary);
+}
+
+:root{
+    --font-primary: Montserrat, sans-serif;
+    --font-secundary: Roboto, sans-serif;
+    --font-action: Lato, sans-serif;
+    --color-primary: #00001e;
+    --color-secundary: #00ff01;
+}
+
+input[type="text"]{
+    padding: .4rem .5rem;
+    border:none;
+    font-family: var(--font-action)
+}
+
+.container{
+    max-width: 1000px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.img-wrapper{
+    overflow: hidden;
+}
+
+.img-wrapper img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    object-fit: cover;
+}
+
+#geral{
+    display: flex;
+    justify-content: center;
+}
+#geral section{
+    flex: 2;
+}
+#geral aside{
+    flex: 1;
+}
+.widgettitle{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.widgettitletext{
+    color: #000000;
+    font-weight: bold;
+}
+.widgettitlebar{
+    height: 3px;
+    width: 50px;
+    background-color: #0ea700;
+    margin-top: 10px;
+}
+article{
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+article .newsdata{
+    display: flex;
+}
+article .newspostedat{
+    background-color: #009700;
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 14px;
+    margin-right: 2px;
+}
+article .newscoments{
+    background-color: #000000;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 14px;
+}
+article .newsthumbnail{
+    margin-top: 30px;
+}
+article .newsthumbnail img{
+    width: 100%;
+    height: auto;
+}
+article .newstitle{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #000000;
+    font-size: 23px;
+}
+article .newsresume{
+    color: #5c5c5c;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+.departamentssquare{
+    height: 160px;
+    width: 120px;
+    background-color: #3ed715;
+    margin: 10px;
+}

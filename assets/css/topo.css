@@ -1,0 +1,190 @@
+
+
+/*Cabeçalho do site*/
+
+#header1{
+    background-color: var(--color-primary);
+    height: 4rem;
+}
+
+
+.logo{
+    height: 4rem;
+    float: left;
+}
+
+#header1 .social-media{
+   display: inline-block;
+   height: 100%;
+   margin: 0 0 0 25rem; 
+}
+
+#header1 .social-media i{
+    float: righ;
+    color: #eee;
+    margin: 1rem .5rem;
+    font-size: 1.5rem;
+    transition: all .4s;
+}
+
+#header1 .social-media i:hover{
+    color: #fff;
+    transform: scale(1.1);
+    animation: rotate .3s linear;
+    
+}
+
+#header1 #buscar-no-site{
+    float: right;
+}
+
+#buscar-no-site [type="text"]{
+    margin: 1rem 0 0;
+    float: left;
+}
+
+#buscar-no-site [type="text"]:focus{
+    outline: .1rem solid var(--color-secundary);
+}
+
+#buscar-no-site .search{
+    float: right;
+    background-color: var(--color-secundary);
+    margin: 1rem 0 0;
+    padding: .35rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: .1rem;
+}
+
+header{
+    height: 4rem;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 6;
+}
+
+/*Flexibilizando o site e colocando uma largura padrão de 990px*/
+
+header nav{
+    height: 100%;
+}
+
+/*Centralizando a logomarca*/
+
+.menu{
+    height: 100%;
+}
+
+.menu .menu-item{
+    float: left;
+    max-width: 14rem;
+    min-width: 8rem;
+    height: 100%;
+    text-transform: uppercase;
+    padding: .8rem 0;
+    text-align: center;
+    transition: all .4s;
+}
+
+.menu .menu-item h3{
+    font: normal normal 800 1rem/1.2rem var(--font-secundary);
+    color: var(--color-primary);
+}
+
+.menu .menu-item:hover{
+    background: #f0f0f5;
+    border-radius: .4rem
+}
+
+.menu .menu-item:hover h3{
+    color: var(--color-secundary);
+}
+
+#home-top{
+    height: 100vh;
+    display: none;
+}
+
+.home-top-division{
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+#home-top-1{
+    background-color: #999;
+    z-index: 3;
+    transform: skew(65deg,0deg) translate(-80vw,0);
+}
+
+#home-top-2{
+    background-color: var(--color-primary);
+    z-index: 2;
+    transform: skew(-65deg,0deg) translate(-80vw,0);
+}
+
+#home-top .img-wrapper{
+    position: absolute;
+    z-index: 4;
+    top: 4rem;
+    left: 4rem;
+    height: 7rem;
+}
+
+#home-top .main-menu{
+    position: absolute;
+    z-index: 4;
+    top: 10rem;
+    right: 7rem;
+    bottom: 10rem;
+}
+
+#home-top .main-menu-item{
+    font: normal normal 400 1.8rem/1.5rem var(--font-secundary);
+    max-width: 16rem;
+    text-align: center;
+    margin: 1.2rem auto;
+    transition: all .5s;
+}
+
+#home-top .main-menu-item a{
+    color: #777;
+}
+
+#home-top .active a{
+    color: var(--color-secundary);
+}
+
+#home-top .active{
+    color: var(--color-secundary);
+    list-style: disclosure-closed;
+}
+
+#home-top .main-menu-item:hover{
+    list-style: disclosure-closed;
+    color: var(--color-secundary);
+}
+
+#home-top .main-menu-item a:hover{
+    color: var(--color-secundary);
+}
+
+#home-top .social-media{
+    position: absolute;
+    bottom: 4rem; left: 2rem;
+    z-index: 4;
+    display: flex;
+    justify-content: space-evenly;
+    width: 20rem;
+}
+
+#home-top .social-media i{
+    font-size: 2rem;
+    color: var(--color-primary);
+    transition: all .5s;
+}
+
+#home-top .social-media i:hover{
+    color: var(--color-secundary);
+    transform: scale(1.2);
+}

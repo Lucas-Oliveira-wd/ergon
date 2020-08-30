@@ -1,0 +1,29 @@
+#ebooksedicasfundo{
+    background-image: url('../img/ebooksedicasfundo.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 670px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ebooksedicasfundo .ebooks{
+    width: 990px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.widgetebook{
+    height: 150px;
+    width: 250px;
+    background-color: rgba(30, 200, 50, 0.6);
+}
+.widgeteb{
+    margin: 20px;
+    align-items: center;
+}
+.widgeteb button{
+    float: left;
+}
