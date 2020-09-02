@@ -10,3 +10,21 @@
         transform: scaleX(1);
     }
 }
+
+@keyframes fadeIn{
+    from{
+        visibility: hidden;
+        opacity: o;
+    } to{
+        visibility: visible;
+        opacity: 1;
+    }}
+    
+@keyframes fadeOut{
+    from{
+        visibility: visible;
+        opacity: 1;
+    } to{
+        visibility: hidden;
+        opacity: 0;
+    }}

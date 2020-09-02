@@ -8,7 +8,6 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    transition: all 1s;
 }
 
 body{
@@ -79,6 +78,20 @@ h6{
 
 .img-wrapper{
     overflow: hidden;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(to top, #bbb, #fff);
+    padding: .2rem .5rem;
+    box-shadow: .1rem .2rem 5px #0006;
+}
+
+button:hover{
+    background: linear-gradient(to top, #aaa, #eee);
+    box-shadow: .12rem .25rem 8px #00000055;
+    transform: scaleY(1.04) scaleX(1.005);
 }
 
 .img-wrapper img{

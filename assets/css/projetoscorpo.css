@@ -11,10 +11,12 @@
     flex: 2;
     margin: 0 3rem 0 0;
     overflow: hidden;
+    transition: all 1s;
 }
 
 .projetoscorpocentral .title-with-bar{
     margin-bottom: 2.5rem;
+    transition: all 1s;
 }
 
 .projetoscorpocentral h2{
@@ -33,6 +35,7 @@
     background: #aaa;
     width: 12rem;
     border-radius: .3rem;
+    transition: all 1s;
 }
 
 .projetoscorpocentral p{
@@ -47,6 +50,7 @@
     width: 27rem;
     margin: 3rem 5rem 0;
 }
+
 
 .projetoscorpo aside{
     flex: 1;
@@ -70,8 +74,17 @@
     display: none;
 }
 
+.show-proj-arq .title-with-bar{
+    animation: fadeIn 1s 1s forwards;
+}
+
+.show-proj-arq .projetoscorpocentral{
+    animation: fadeIn 1s forwards;
+}
+
 .show-proj-arq .title-bar{
     background: var(--color-proj-1);
+    animation: fadeIn 1s 1s forwards;
 }
 
 .show-proj-arq .projetoscorpo aside .asidesquare{

@@ -23,6 +23,7 @@
     flex: 1;
     cursor: pointer;
     padding: 4rem 0 0 0;
+    transition: all 1s;
 }
 
 .menuproj-item:hover{
@@ -107,6 +108,8 @@ margin: 0 auto;
     color: var(--color-proj-8);
 }
 
+/*     barra que se modifica       */
+
 .menuproj-item .menu-proj-bar{
     width: 6rem;
     height: .2rem;
@@ -116,6 +119,7 @@ margin: 0 auto;
 
 .menuproj-item .menu-proj-bar .menu-proj-bar-content{
     flex: 1;
+    transition: all 1s;
 }
 
 .menuproj-item:hover .menu-proj-bar{
@@ -165,7 +169,8 @@ margin: 0 auto;
     width: 80vw;
     margin: 0 auto 2rem;
     border-bottom-right-radius: 80%;
-    border-bottom-left-radius: 80%
+    border-bottom-left-radius: 80%;
+    transition: background 1s;
 }
 
 /*==================================================================
