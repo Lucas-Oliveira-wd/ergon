@@ -5,10 +5,8 @@
     height: 670px;
 }
 
-.bannerheadline{
-    position: relative;
-    top: 4rem;
-    left: 2rem;
+#banner .bannerheadline{
+    flex: 1;
 }
 
 .bannerheadline h2{
@@ -22,43 +20,27 @@
     height: 100%;
 }
 
-#banner .banner-bottom{
-   position: absolute;
-   bottom: 0;
-   height: 40rem;
-   z-index: 5;
-   display: flex;
-}
-
 .banneroptions{
     height: 210px;
     display: flex;
-}
-
-.banneroptions:nth-of-type(3){
-    position: relative;
-    bottom: 0;
-    top: 8rem;
-}
-
-.banneroptions:nth-of-type(2){
-    position: relative;
-    top: 8rem
+    flex-wrap: wrap;
+    flex: 2;
 }
 
 .banner1, .banner2, .banner3, .banner4, .banner5, .banner6{
     flex: 1;
     color: #fff;
     padding: 20px;
+    min-width: 20rem;
 }
 .banner4, .banner1{
-    background-color: #6eff45;
+    background-color: var(--color-secundary-lighter);
 }
 .banner5, .banner2{
-    background-color: #3ed715;
+    background-color: var(--color-secundary);
 }
 .banner3, .banner6{
-    background-color: #0ea700;
+    background-color: var(--color-secundary-darker);
 }
 
 .banneroptions .bannertitle{

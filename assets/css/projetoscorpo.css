@@ -1,24 +1,245 @@
+.place-hoder-proj-desc{
+    height: 80rem;
+    width: 100%;
+}
 .projetoscorpo{
-    display: flex;
-    justify-content: space-between
+    height: 80rem;
+    display: none;
 }
+
 .projetoscorpo .projetoscorpocentral{
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    margin-left: 40px;
-    margin-right: 40px;
-}
-.projetoscorpocentral .projcorptext{
-    line-height: 25px;
-    text-align: justify;
-}
-.projetoscorpo aside{
     flex: 2;
+    margin: 0 3rem 0 0;
+    overflow: hidden;
 }
-.projetoscorpo aside .projcorpasidesquare{
-    height: 200px;
-    width: 360px;
-    background-color: #3ed715;
-    margin: 10px;
+
+.projetoscorpocentral .title-with-bar{
+    margin-bottom: 2.5rem;
+}
+
+.projetoscorpocentral h2{
+    font: normal normal 700 2rem/2.5rem var(--font-primary);
+    margin: 0 0 .8rem 0;
+    color: #545551
+}
+
+.projetoscorpocentral h3{
+    margin: 1.4rem 0 0;
+    color: #545551
+}
+
+.projetoscorpocentral .title-bar{
+    height: .5rem;
+    background: #aaa;
+    width: 12rem;
+    border-radius: .3rem;
+}
+
+.projetoscorpocentral p{
+    overflow: hidden;
+    margin: 1rem 0 0 0;
+    text-indent: 4rem;
+    text-align: justify;
+
+}
+
+.projetoscorpocentral button{
+    width: 27rem;
+    margin: 3rem 5rem 0;
+}
+
+.projetoscorpo aside{
+    flex: 1;
+    flex-wrap: wrap;
+}
+.projetoscorpo aside .asidesquare{
+    height: 15rem;
+    width: 100%;
+    background-color: #ccc;
+    margin: 3rem 0;
+}
+
+/*=================================================================================================================
+                                    show-proj-arq
+===================================================================================================================*/
+.show-proj-arq #secarq{
+    display: block;
+}
+
+.show-proj-arq .place-hoder-proj-desc{
+    display: none;
+}
+
+.show-proj-arq .title-bar{
+    background: var(--color-proj-1);
+}
+
+.show-proj-arq .projetoscorpo aside .asidesquare{
+    background: var(--color-proj-1);
+}
+
+.show-proj-arq .projcorptext button{
+    background: var(--color-proj-1)
+}
+
+/*=================================================================================================================
+                                    show-proj-hidro
+===================================================================================================================*/
+.show-proj-hidro #sechidro{
+    display: block;
+}
+
+.show-proj-hidro .place-hoder-proj-desc{
+    display: none;
+}
+
+.show-proj-hidro .title-bar{
+    background: var(--color-proj-2);
+}
+
+.show-proj-hidro .projetoscorpo aside .asidesquare{
+    background: var(--color-proj-2);
+}
+
+.show-proj-hidro .projcorptext button{
+    background: var(--color-proj-2)
+}
+
+/*=================================================================================================================
+                                    show-proj-hidra
+===================================================================================================================*/
+.show-proj-hidra #sechidra{
+    display: block;
+}
+
+.show-proj-hidra .place-hoder-proj-desc{
+    display: none;
+}
+
+.show-proj-hidra .title-bar{
+    background: var(--color-proj-3);
+}
+
+.show-proj-hidra .projetoscorpo aside .asidesquare{
+    background: var(--color-proj-3);
+}
+
+.show-proj-hidra .projcorptext button{
+    background: var(--color-proj-3)
+}
+
+/*=================================================================================================================
+                                    show-proj-combinc
+===================================================================================================================*/
+.show-proj-combinc #seccomb{
+    display: block;
+}
+
+.show-proj-combinc .place-hoder-proj-desc{
+    display: none;
+}
+
+.show-proj-combinc .title-bar{
+    background: var(--color-proj-4);
+}
+
+.show-proj-combinc .projetoscorpo aside .asidesquare{
+    background: var(--color-proj-4);
+}
+
+.show-proj-combinc .projcorptext button{
+    background: var(--color-proj-4)
+}
+
+/*=================================================================================================================
+                                    show-proj-elet
+===================================================================================================================*/
+.show-proj-elet #secelet{
+    display: block;
+}
+
+.show-proj-elet .place-hoder-proj-desc{
+    display: none;
+}
+
+.show-proj-elet .title-bar{
+    background: var(--color-proj-5);
+}
+
+.show-proj-elet .projetoscorpo aside .asidesquare{
+    background: var(--color-proj-5);
+}
+
+.show-proj-elet .projcorptext button{
+    background: var(--color-proj-5)
+}
+
+/*=================================================================================================================
+                                    show-proj-est
+===================================================================================================================*/
+.show-proj-est #secest{
+    display: block;
+}
+
+.show-proj-est .place-hoder-proj-desc{
+    display: none;
+}
+
+.show-proj-est .title-bar{
+    background: var(--color-proj-6);
+}
+
+.show-proj-est .projetoscorpo aside .asidesquare{
+    background: var(--color-proj-6);
+}
+
+.show-proj-est .projcorptext button{
+    background: var(--color-proj-6)
+}
+
+/*=================================================================================================================
+                                    show-proj-inf
+===================================================================================================================*/
+.show-proj-inf #secinf{
+    display: block;
+}
+
+.show-proj-inf .place-hoder-proj-desc{
+    display: none;
+}
+
+.show-proj-inf .title-bar{
+    background: var(--color-proj-7);
+}
+
+.show-proj-inf .projetoscorpo aside .asidesquare{
+    background: var(--color-proj-7);
+}
+
+.show-proj-inf .projcorptext button{
+    background: var(--color-proj-7)
+}
+
+/*=================================================================================================================
+                                    show-proj-spda
+===================================================================================================================*/
+.show-proj-spda #secspda{
+    display: block;
+}
+
+.show-proj-spda .place-hoder-proj-desc{
+    display: none;
+}
+
+.show-proj-spda .title-bar{
+    background: var(--color-proj-8);
+}
+
+.show-proj-spda .projetoscorpo aside .asidesquare{
+    background: var(--color-proj-8);
+}
+
+.show-proj-spda .projcorptext button{
+    background: var(--color-proj-8);
+    color: #000;
 }

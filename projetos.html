@@ -3,659 +3,569 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width,user-scalable=0">
-    <title>Concretize</title>
+    <title>Ergon Engenharia</title>
     <link rel="stylesheet" type="text/css" href="assets/css/topo.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/banner.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/geral.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/footer.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/menuprojetos.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/projetoscorpo.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/animation.css"/>
 </head>
 <body>
-    <header>
+    <header id="header1">
         <div class="container">
-            <div class="logo">
-                <a href="index.html"><img src="assets/img/logomarca.png"></a>
+            <div class="logo img-wrapper">
+                <a href="index.html"><img src="assets/img/ergon-logo-fundo-azul-sf.png"></a>
             </div>
-            <div class="divmenu">
-                <nav>
-                    <ul class="menu">
-                        <li>
-                            <a href="index.html">
-                                <h2 class="itemdomenu">INÍCIO</h2>
-                                <div class="widgettitlebarmenu"></div>
-                            </a>
-                        </li>
-                        <li class="active">
-                            <a href="projetos.html">
-                                <h2 class="itemdomenu">PROJETOS</h2>
-                                <div class="widgettitlebarmenu"></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="ebooksedicas.html">
-                                <h2 class="itemdomenu">EBOOKS E DICAS</h2>
-                                <div class="widgettitlebarmenu"></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="servicos.html">
-                                <h2 class="itemdomenu">SERVIÇOS</h2>
-                                <div class="widgettitlebarmenu"></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="financiamentohabitacional.html">
-                                <h2 class="itemdomenu">FINANCIAMENTO HABITACIONAL</h2>
-                                <div class="widgettitlebarmenu"></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="contatosesoliciteumorcamento.html">
-                                <h2 class="itemdomenu">CONTATOS E SOLICITE UM ORÇAMENTO</h2>
-                                <div class="widgettitlebarmenu"></div>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+            <div class="social-media">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fas fa-envelope"></i></a>
+                <a href=""><i class="fab fa-whatsapp"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+            </div>
+            <div id="buscar-no-site">
+                <input type="text" placeholder="Buscar no site"> 
+                <div class="search"><i class="fas fa-search"></i></div>
             </div>
         </div>
     </header>
-    <Section class="flex" onclick=" voltar()">
-        <div class="divtopoprojetos flex">
+    <header>
+        <div class="container topodosite">
             <nav>
-                <ul id="menuproj" class="flex menuprojetos">
-                    <li>
-                        <div onclick="projarq()" id="projarq">
-                            <div id="projetosimg1" class="fundoimgprojetos"><img src="assets/img/iconeprojetoarquitetonico.png"/></div>
-                            <div><h2 id="h1">Arquitetônico</h2></div>
-                        </div>
+                <ul class="menu">
+                    <li class="menu-item active">
+                        <a href="index.html">
+                            <h3>Início</h3>
+                        </a>
                     </li>
-                    <li>
-                        <div onclick='projhidros()' id="projhidros">
-                            <div id="projetosimg2" class="fundoimgprojetos"><img src="assets/img/iconeprojetohidrossanitario.png"/></div>
-                            <div><h2 id="h2">Hidrossanitário</h2></div>
-                        </div> 
+                    <li class="menu-item">
+                        <a href="projetos.html">
+                            <h3>Projetos</h3>
+                        </a>
                     </li>
-                    <li>
-                        <div onclick="projhidra()" id="projhidra">
-                            <div id="projetosimg3" class="fundoimgprojetos"><img src="assets/img/iconeprojetohidraulico.png"/></div>
-                            <div><h2 id="h3">Hidráulico</h2></div>
-                        </div>
+                    <li class="menu-item">
+                        <a href="ebooksedicas.html">
+                            <h3>Ebooks e Dicas</h3>
+                        </a>
                     </li>
-                    <li>
-                        <div onclick="projcomb()" id="projcomb">
-                            <div id="projetosimg4" class="fundoimgprojetos"><img src="assets/img/iconeprojetocombateaincendio.png"/></div>
-                            <div><h2 id="h4">Combate a incêndio</h2></div>
-                        </div>
+                    <li class="menu-item">
+                        <a href="servicos.html">
+                            <h3>Serviços</h3>
+                        </a>
                     </li>
-                    <li>
-                        <div onclick="projelet()" id="projelet">
-                            <div id="projetosimg5" class="fundoimgprojetos"><img src="assets/img/iconeprojetoeletrico.png"/></div>
-                            <div><h2 id="h5">Elétrico</h2></div>
-                        </div>
+                    <li class="menu-item">
+                        <a href="financiamentohabitacional.html">
+                            <h3>Financiamento Habitacional</h3>
+                        </a>
                     </li>
-                    <li>
-                        <div onclick="projest()" id="projest">
-                            <div id="projetosimg6" class="fundoimgprojetos"><img src="assets/img/iconeprojetoestrutural.png"/></div>
-                            <div><h2 id="h6">Estrutural</h2></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div onclick="projinf()" id="projinf">
-                            <div id="projetosimg7" class="fundoimgprojetos"><img src="assets/img/iconeprojetoinferiores.png"/></div>
-                            <div><h2 id="h7">Inferiores</h2></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div onclick="projspda()" id="projspda">
-                            <div id="projetosimg8" class="fundoimgprojetos"><img src="assets/img/iconeprojetospda.png"/></div>
-                            <div><h2 id="h8">SPDA</h2></div>
-                        </div>
+                    <li class="menu-item">
+                        <a href="contatosesoliciteumorcamento.html">
+                            <h3>Contatos e Solicite um Orçamento</h3>
+                        </a>
                     </li>
                 </ul>
             </nav>
         </div>
+    </header>
+    <Section id="sectio-projetos-menu">
+        <div class="container flex">
+
+            <!--        Menu de Projetos        -->
+
+            <nav>
+                <ul id="menuproj" class="flex menuprojetos">
+
+                    <li onclick="sArquit ()" id="projarq" class="menuproj-item">
+                        <div id="projetosimg1" class="fundoimgprojetos img-wrapper">
+                            <img src="assets/img/iconeprojetoarquitetonico.png"/>
+                        </div>
+                        <h2 id="h1">Arquitetônico</h2>
+                        <div class="menu-proj-bar">
+                            <div class="menu-proj-bar-content bar-content-1"></div>
+                            <div class="menu-proj-bar-content bar-content-2"></div>
+                        </div>
+                    </li>
+
+                    <li onclick="sHidro()" id="projhidros" class="menuproj-item">
+                        <div id="projetosimg2" class="fundoimgprojetos img-wrapper">
+                            <img src="assets/img/iconeprojetohidrossanitario.png"/>
+                        </div>
+                        <h2 id="h2">Hidrossanitário</h2>
+                        <div class="menu-proj-bar">
+                            <div class="menu-proj-bar-content bar-content-1"></div>
+                            <div class="menu-proj-bar-content bar-content-2"></div>
+                        </div>
+                    </li>
+
+                    <li onclick="sHidra()" id="projhidra" class="menuproj-item">
+                        <div id="projetosimg3" class="fundoimgprojetos img-wrapper">
+                            <img src="assets/img/iconeprojetohidraulico.png"/>
+                        </div>
+                        <h2 id="h3">Hidráulico</h2>
+                        <div class="menu-proj-bar">
+                            <div class="menu-proj-bar-content bar-content-1"></div>
+                            <div class="menu-proj-bar-content bar-content-2"></div>
+                        </div>
+                    </li>
+
+                    <li onclick="sCombInc()" id="projcomb" class="menuproj-item">
+                        <div id="projetosimg4" class="fundoimgprojetos img-wrapper">
+                            <img src="assets/img/iconeprojetocombateaincendio.png"/>
+                        </div>
+                        <h2 id="h4">Combate a incêndio</h2>
+                        <div class="menu-proj-bar">
+                            <div class="menu-proj-bar-content bar-content-1"></div>
+                            <div class="menu-proj-bar-content bar-content-2"></div>
+                        </div>
+                    </li>
+
+                    <li onclick="sElet()" id="projelet" class="menuproj-item">
+                        <div id="projetosimg5" class="fundoimgprojetos img-wrapper">
+                            <img src="assets/img/iconeprojetoeletrico.png"/>
+                        </div>
+                        <h2 id="h5">Elétrico</h2>
+                        <div class="menu-proj-bar">
+                            <div class="menu-proj-bar-content bar-content-1"></div>
+                            <div class="menu-proj-bar-content bar-content-2"></div>
+                        </div>
+                    </li>
+
+                    <li onclick="sEst()" id="projest" class="menuproj-item">
+                        <div id="projetosimg6" class="fundoimgprojetos img-wrapper">
+                            <img src="assets/img/iconeprojetoestrutural.png"/>
+                        </div>
+                        <h2 id="h6">Estrutural</h2>
+                        <div class="menu-proj-bar">
+                            <div class="menu-proj-bar-content bar-content-1"></div>
+                            <div class="menu-proj-bar-content bar-content-2"></div>
+                        </div>
+                    </li>
+
+                    <li onclick="sInf()" id="projinf" class="menuproj-item">
+                        <div id="projetosimg7" class="fundoimgprojetos img-wrapper">
+                            <img src="assets/img/iconeprojetoinferiores.png"/>
+                        </div>
+                        <h2 id="h7">Inferiores</h2>
+                        <div class="menu-proj-bar">
+                            <div class="menu-proj-bar-content bar-content-1"></div>
+                            <div class="menu-proj-bar-content bar-content-2"></div>
+                        </div>
+                    </li>
+
+                    <li onclick="sSPDA()" id="projspda" class="menuproj-item">
+                        <div id="projetosimg8" class="fundoimgprojetos img-wrapper">
+                            <img src="assets/img/iconeprojetospda.png"/>
+                        </div>
+                        <h2 id="h8">SPDA</h2>
+                        <div class="menu-proj-bar">
+                            <div class="menu-proj-bar-content bar-content-1"></div>
+                            <div class="menu-proj-bar-content bar-content-2"></div>
+                        </div>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
     </Section>
-    <section id="secarc" class="projetoscorpo">
-        <section class="projetoscorpocentral">
-            <div class="projetoscorpotitulo">
-                <div class="widgettitle">
-                    <div class=widgettitletext>Projeto Arquitetônico</div>
-                    <div class="widgettitlebar"></div>
-                </div>
-            </div>
-            <div class="projcorptext">
-                <p>Uma breve descrião sobre o que é um projeto arquitetônico...
-                    açdfgkjlagk nklça jçlrjaçoi jlkganç lhr oanl no inralg
-                     a kjçl akj
-                </p>
-                <p>isakfh iouh oijr giohj oçinw ioenorqi nçoi hnorqn iuh quiçn kjf iubqn o ubguopqjn oipnh poih çin boih 
-                     kijwgoijgroimng ipnjoi noaihonhqmibojoi nqóin on oi jq pnoiqn óin inh´poj pn oiqah 
-                      oaihnoignipnhoun~dlksgnjíhwj in oijgíopmna~poj óin nm~pbojhío nlkn pijgpinqa in í
-                      apgj p~ij pijh wpij ´pijhpõjhóijanldfmjóiaqj n
-                </p>
-                <p>ljoiwahfouh iu ijagroihgupih nigja ohirhgoun in oçihgraoih lni oihgoian oingkajbno n 
-                    agoih rgopiahgoin oi hoigahjogíno ingoaihgroign
-                </p>
-            </div>
-        </section>
-        <aside>
-            <div classe="projcorpaside">
-                <div class="widget">
-                    <div class="widgettitle">
-                        <div class=widgettitletext></div>
-                        <div class="widgettitlebar"></div>
-                    </div>
-                    <div class="widgetbody flex">
-                        <a href="" class="linkprojetos">
-                        <div class="projcorpasidesquare">
-                            <div class="widget">
-                                <div class="widgettitle">
-                                    <div class=widgettitletext>Porquê contratar</div>
-                                    <div class="widgettitlebar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="" class="linkprojetos">
-                        <div class="projcorpasidesquare">
-                            <div class="widget">
-                                <div class="widgettitle">
-                                    <div class=widgettitletext>Como contratar</div>
-                                    <div class="widgettitlebar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="" class="linkprojetos">
-                        <div class="projcorpasidesquare">
-                            <div class="widget">
-                                <div class="widgettitle">
-                                    <div class=widgettitletext>Importância</div>
-                                    <div class="widgettitlebar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="" class="linkprojetos">
-                        <div class="projcorpasidesquare">
-                            <div class="widget">
-                                <div class="widgettitle">
-                                    <div class=widgettitletext>Algo mais</div>
-                                    <div class="widgettitlebar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </aside>
-    </section>
 
-    <section id="sechidro" class="projetoscorpo">
-        <section class="projetoscorpocentral">
-            <div class="projetoscorpotitulo">
-                <div class="widgettitle">
-                    <div class=widgettitletext>Projeto Hidrossanitário</div>
-                    <div class="widgettitlebar"></div>
-                </div>
-            </div>
-            <div class="projcorptext">
-                <p>Uma breve descrião sobre o que é um projeto arquitetônico...
-                    açdfgkjlagk nklça jçlrjaçoi jlkganç lhr oanl no inralg
-                     a kjçl akj
-                </p>
-                <p>isakfh iouh oijr giohj oçinw ioenorqi nçoi hnorqn iuh quiçn kjf iubqn o ubguopqjn oipnh poih çin boih 
-                     kijwgoijgroimng ipnjoi noaihonhqmibojoi nqóin on oi jq pnoiqn óin inh´poj pn oiqah 
-                      oaihnoignipnhoun~dlksgnjíhwj in oijgíopmna~poj óin nm~pbojhío nlkn pijgpinqa in í
-                      apgj p~ij pijh wpij ´pijhpõjhóijanldfmjóiaqj n
-                </p>
-                <p>ljoiwahfouh iu ijagroihgupih nigja ohirhgoun in oçihgraoih lni oihgoian oingkajbno n 
-                    agoih rgopiahgoin oi hoigahjogíno ingoaihgroign
-                </p>
-            </div>
-        </section>
-        <aside>
-            <div classe="projcorpaside">
-                <div class="widget">
-                    <div class="widgettitle">
-                        <div class=widgettitletext></div>
-                        <div class="widgettitlebar"></div>
-                    </div>
-                    <div class="widgetbody flex">
-                        <a href="" class="linkprojetos">
-                        <div class="projcorpasidesquare">
-                            <div class="widget">
-                                <div class="widgettitle">
-                                    <div class=widgettitletext>Porquê contratar</div>
-                                    <div class="widgettitlebar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="" class="linkprojetos">
-                        <div class="projcorpasidesquare">
-                            <div class="widget">
-                                <div class="widgettitle">
-                                    <div class=widgettitletext>Como contratar</div>
-                                    <div class="widgettitlebar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="" class="linkprojetos">
-                        <div class="projcorpasidesquare">
-                            <div class="widget">
-                                <div class="widgettitle">
-                                    <div class=widgettitletext>Importância</div>
-                                    <div class="widgettitlebar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="" class="linkprojetos">
-                        <div class="projcorpasidesquare">
-                            <div class="widget">
-                                <div class="widgettitle">
-                                    <div class=widgettitletext>Algo mais</div>
-                                    <div class="widgettitlebar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </aside>
-    </section>
+<!--           Barra que muda de cor                 -->
+<div id="menu-proj-bar-bottom"></div>
 
-    <section id="sechidra" class="projetoscorpo">
-        <section class="projetoscorpocentral">
-            <div class="projetoscorpotitulo">
-                <div class="widgettitle">
-                    <div class=widgettitletext>Projeto Hidráulico</div>
-                    <div class="widgettitlebar"></div>
-                </div>
-            </div>
-            <div class="projcorptext">
-                <p>Uma breve descrião sobre o que é um projeto arquitetônico...
-                    açdfgkjlagk nklça jçlrjaçoi jlkganç lhr oanl no inralg
-                     a kjçl akj
-                </p>
-                <p>isakfh iouh oijr giohj oçinw ioenorqi nçoi hnorqn iuh quiçn kjf iubqn o ubguopqjn oipnh poih çin boih 
-                     kijwgoijgroimng ipnjoi noaihonhqmibojoi nqóin on oi jq pnoiqn óin inh´poj pn oiqah 
-                      oaihnoignipnhoun~dlksgnjíhwj in oijgíopmna~poj óin nm~pbojhío nlkn pijgpinqa in í
-                      apgj p~ij pijh wpij ´pijhpõjhóijanldfmjóiaqj n
-                </p>
-                <p>ljoiwahfouh iu ijagroihgupih nigja ohirhgoun in oçihgraoih lni oihgoian oingkajbno n 
-                    agoih rgopiahgoin oi hoigahjogíno ingoaihgroign
-                </p>
-            </div>
-        </section>
-        <aside>
-            <div classe="projcorpaside">
-                <div class="widget">
-                    <div class="widgettitle">
-                        <div class=widgettitletext></div>
-                        <div class="widgettitlebar"></div>
-                    </div>
-                    <div class="widgetbody flex">
-                        <a href="" class="linkprojetos">
-                        <div class="projcorpasidesquare">
-                            <div class="widget">
-                                <div class="widgettitle">
-                                    <div class=widgettitletext>Porquê contratar</div>
-                                    <div class="widgettitlebar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="" class="linkprojetos">
-                        <div class="projcorpasidesquare">
-                            <div class="widget">
-                                <div class="widgettitle">
-                                    <div class=widgettitletext>Como contratar</div>
-                                    <div class="widgettitlebar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="" class="linkprojetos">
-                        <div class="projcorpasidesquare">
-                            <div class="widget">
-                                <div class="widgettitle">
-                                    <div class=widgettitletext>Importância</div>
-                                    <div class="widgettitlebar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="" class="linkprojetos">
-                        <div class="projcorpasidesquare">
-                            <div class="widget">
-                                <div class="widgettitle">
-                                    <div class=widgettitletext>Algo mais</div>
-                                    <div class="widgettitlebar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </aside>
-    </section>
+<!--            Place holder para as descrições dos projetos                -->
+<div class="place-hoder-proj-desc"></div>
 
-    <section id="seccomb" class="projetoscorpo">
+<!--        Arquitetônico                           -->
+<section id="secarq" class="projetoscorpo">
+    <div class="container flex">
         <section class="projetoscorpocentral">
-            <div class="projetoscorpotitulo">
-                <div class="widgettitle">
-                    <div class=widgettitletext>Combate a Incendios</div>
-                    <div class="widgettitlebar"></div>
-                </div>
+            <div class="title-with-bar">
+                <h2>Projeto Arquitetônico</h2>
+                <div class="title-bar"></div>
             </div>
             <div class="projcorptext">
-                <p>Uma breve descrião sobre o que é um projeto arquitetônico...
-                    açdfgkjlagk nklça jçlrjaçoi jlkganç lhr oanl no inralg
-                     a kjçl akj
-                </p>
-                <p>isakfh iouh oijr giohj oçinw ioenorqi nçoi hnorqn iuh quiçn kjf iubqn o ubguopqjn oipnh poih çin boih 
-                     kijwgoijgroimng ipnjoi noaihonhqmibojoi nqóin on oi jq pnoiqn óin inh´poj pn oiqah 
-                      oaihnoignipnhoun~dlksgnjíhwj in oijgíopmna~poj óin nm~pbojhío nlkn pijgpinqa in í
-                      apgj p~ij pijh wpij ´pijhpõjhóijanldfmjóiaqj n
-                </p>
-                <p>ljoiwahfouh iu ijagroihgupih nigja ohirhgoun in oçihgraoih lni oihgoian oingkajbno n 
-                    agoih rgopiahgoin oi hoigahjogíno ingoaihgroign
-                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur
+placeat eius, exercitationem perferendis fugiat mollitia impedit dolorem in omnis asperiores, laborum 
+repellat. Ipsam ea obcaecati iure est rerum fugiat non, cupiditate officiis libero voluptas consectetur
+ex eum magnam? Pariatur iusto ducimus, officiis illum molestiae, similique necessitatibus laboriosam
+voluptatem facere eaque, iure voluptas alias enim! Tempora omnis, officiis sit quae iste cupiditate
+animi numquam obcaecati placeat libero minus, iusto quaerat dolores similique perspiciatis dignissimos
+nostrum temporibus, vel quidem eaque labore. Esse suscipit nostrum iusto cum, voluptates perspiciatis
+eius veniam repellendus excepturi eos recusandae officia vitae eaque natus accusantium accusamus omnis
+velit quae. Id esse laboriosam quasi nihil doloremque! Consequatur porro officiis dolorem amet? Qui
+harum sequi id temporibus sunt, error nobis accusantium a obcaecati labore alias ipsum debitis dolorem,
+adipisci dolores sint animi rem optio excepturi deleniti unde maiores odit libero. Dolorum, vel minus
+eos distinctio illo dignissimos voluptatum consequatur, explicabo debitis laborum in recusandae minima
+expedita ab omnis provident animi dolore. Accusamus quod debitis pariatur cumque facilis beatae amet
+totam vel. Quas reiciendis totam officia nam! Explicabo eaque doloremque quam? Obcaecati voluptatem
+quos sed qui mollitia laborum id, consectetur deserunt fuga quibusdam minima, ipsa, numquam autem
+nulla aspernatur provident.</p>
+                <h3>Importância</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, alias
+aspernatur qui ad, accusantium fugiat aperiam esse labore minus sed molestias
+itaque quam! Laboriosam eaque assumenda vitae omnis vel officiis enim numquam
+quasi dolorum accusantium temporibus ut itaque dignissimos velit corporis
+impedit, placeat hic esse! Mollitia animi qui cum rem architecto eius aut
+impedit ducimus excepturi reprehenderit sequi unde, dignissimos suscipit
+nihil dolore consequatur, voluptatibus illo iusto dolorem minus? Esse nisi,
+ea natus quae ducimus deserunt at sint id. Ratione nesciunt at tempora
+dignissimos reiciendis soluta? Id sit officia eveniet ab aliquid, repudiandae
+suscipit deserunt, at harum delectus officiis quam?</p>
+                    <button class="bt-p">Contratar</button>
             </div>
         </section>
         <aside>
-            <div classe="projcorpaside">
-                <div class="widget">
-                    <div class="widgettitle">
-                        <div class=widgettitletext></div>
-                        <div class="widgettitlebar"></div>
-                    </div>
-                    <div class="widgetbody flex">
-                        <a href="" class="linkprojetos">
-                        <div class="projcorpasidesquare">
-                            <div class="widget">
-                                <div class="widgettitle">
-                                    <div class=widgettitletext>Porquê contratar</div>
-                                    <div class="widgettitlebar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="" class="linkprojetos">
-                        <div class="projcorpasidesquare">
-                            <div class="widget">
-                                <div class="widgettitle">
-                                    <div class=widgettitletext>Como contratar</div>
-                                    <div class="widgettitlebar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="" class="linkprojetos">
-                        <div class="projcorpasidesquare">
-                            <div class="widget">
-                                <div class="widgettitle">
-                                    <div class=widgettitletext>Importância</div>
-                                    <div class="widgettitlebar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="" class="linkprojetos">
-                        <div class="projcorpasidesquare">
-                            <div class="widget">
-                                <div class="widgettitle">
-                                    <div class=widgettitletext>Algo mais</div>
-                                    <div class="widgettitlebar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <div class="asidesquare"></div>
+            <div class="asidesquare"></div>
+            <div class="asidesquare"></div>
         </aside>
-    </section>
+    </div>
+</section>
 
-    <section id="secelet" class="projetoscorpo">
+<!--              Hidrossanitário                     -->
+<section id="sechidro" class="projetoscorpo">
+    <div class="container flex">
         <section class="projetoscorpocentral">
-            <div class="projetoscorpotitulo">
-                <div class="widgettitle">
-                    <div class=widgettitletext>Projeto Elétrico</div>
-                    <div class="widgettitlebar"></div>
-                </div>
+            <div class="title-with-bar">
+                <h2>Projeto Hidrossanitário</h2>
+                <div class="title-bar"></div>
             </div>
             <div class="projcorptext">
-                <p>Uma breve descrião sobre o que é um projeto arquitetônico...
-                    açdfgkjlagk nklça jçlrjaçoi jlkganç lhr oanl no inralg
-                     a kjçl akj
-                </p>
-                <p>isakfh iouh oijr giohj oçinw ioenorqi nçoi hnorqn iuh quiçn kjf iubqn o ubguopqjn oipnh poih çin boih 
-                     kijwgoijgroimng ipnjoi noaihonhqmibojoi nqóin on oi jq pnoiqn óin inh´poj pn oiqah 
-                      oaihnoignipnhoun~dlksgnjíhwj in oijgíopmna~poj óin nm~pbojhío nlkn pijgpinqa in í
-                      apgj p~ij pijh wpij ´pijhpõjhóijanldfmjóiaqj n
-                </p>
-                <p>ljoiwahfouh iu ijagroihgupih nigja ohirhgoun in oçihgraoih lni oihgoian oingkajbno n 
-                    agoih rgopiahgoin oi hoigahjogíno ingoaihgroign
-                </p>
-            </div>
-        </section>
-        <aside>
-            <div classe="projcorpaside">
-                <div class="widget">
-                    <div class="widgettitle">
-                        <div class=widgettitletext></div>
-                        <div class="widgettitlebar"></div>
-                    </div>
-                    <div class="widgetbody flex">
-                        <a href="" class="linkprojetos">
-                        <div class="projcorpasidesquare">
-                            <div class="widget">
-                                <div class="widgettitle">
-                                    <div class=widgettitletext>Porquê contratar</div>
-                                    <div class="widgettitlebar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="" class="linkprojetos">
-                        <div class="projcorpasidesquare">
-                            <div class="widget">
-                                <div class="widgettitle">
-                                    <div class=widgettitletext>Como contratar</div>
-                                    <div class="widgettitlebar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="" class="linkprojetos">
-                        <div class="projcorpasidesquare">
-                            <div class="widget">
-                                <div class="widgettitle">
-                                    <div class=widgettitletext>Importância</div>
-                                    <div class="widgettitlebar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="" class="linkprojetos">
-                        <div class="projcorpasidesquare">
-                            <div class="widget">
-                                <div class="widgettitle">
-                                    <div class=widgettitletext>Algo mais</div>
-                                    <div class="widgettitlebar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </aside>
-    </section>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur
+placeat eius, exercitationem perferendis fugiat mollitia impedit dolorem in omnis asperiores, laborum 
+repellat. Ipsam ea obcaecati iure est rerum fugiat non, cupiditate officiis libero voluptas consectetur
+ex eum magnam? Pariatur iusto ducimus, officiis illum molestiae, similique necessitatibus laboriosam
+voluptatem facere eaque, iure voluptas alias enim! Tempora omnis, officiis sit quae iste cupiditate
+animi numquam obcaecati placeat libero minus, iusto quaerat dolores similique perspiciatis dignissimos
+nostrum temporibus, vel quidem eaque labore. Esse suscipit nostrum iusto cum, voluptates perspiciatis
+eius veniam repellendus excepturi eos recusandae officia vitae eaque natus accusantium accusamus omnis
+velit quae. Id esse laboriosam quasi nihil doloremque! Consequatur porro officiis dolorem amet? Qui
+harum sequi id temporibus sunt, error nobis accusantium a obcaecati labore alias ipsum debitis dolorem,
+adipisci dolores sint animi rem optio excepturi deleniti unde maiores odit libero. Dolorum, vel minus
+eos distinctio illo dignissimos voluptatum consequatur, explicabo debitis laborum in recusandae minima
+expedita ab omnis provident animi dolore. Accusamus quod debitis pariatur cumque facilis beatae amet
+totam vel. Quas reiciendis totam officia nam! Explicabo eaque doloremque quam? Obcaecati voluptatem
+quos sed qui mollitia laborum id, consectetur deserunt fuga quibusdam minima, ipsa, numquam autem
+nulla aspernatur provident.</p>
 
-    <section id="secest" class="projetoscorpo">
-        <section class="projetoscorpocentral">
-            <div class="projetoscorpotitulo">
-                <div class="widgettitle">
-                    <div class=widgettitletext>Projeto Estrutural</div>
-                    <div class="widgettitlebar"></div>
-                </div>
-            </div>
-            <div class="projcorptext">
-                <p>Uma breve descrião sobre o que é um projeto arquitetônico...
-                    açdfgkjlagk nklça jçlrjaçoi jlkganç lhr oanl no inralg
-                     a kjçl akj
-                </p>
-                <p>isakfh iouh oijr giohj oçinw ioenorqi nçoi hnorqn iuh quiçn kjf iubqn o ubguopqjn oipnh poih çin boih 
-                     kijwgoijgroimng ipnjoi noaihonhqmibojoi nqóin on oi jq pnoiqn óin inh´poj pn oiqah 
-                      oaihnoignipnhoun~dlksgnjíhwj in oijgíopmna~poj óin nm~pbojhío nlkn pijgpinqa in í
-                      apgj p~ij pijh wpij ´pijhpõjhóijanldfmjóiaqj n
-                </p>
-                <p>ljoiwahfouh iu ijagroihgupih nigja ohirhgoun in oçihgraoih lni oihgoian oingkajbno n 
-                    agoih rgopiahgoin oi hoigahjogíno ingoaihgroign
-                </p>
-            </div>
-        </section>
-        <aside>
-            <div classe="projcorpaside">
-                <div class="widget">
-                    <div class="widgettitle">
-                        <div class=widgettitletext></div>
-                        <div class="widgettitlebar"></div>
-                    </div>
-                    <div class="widgetbody flex">
-                        <a href="" class="linkprojetos">
-                        <div class="projcorpasidesquare">
-                            <div class="widget">
-                                <div class="widgettitle">
-                                    <div class=widgettitletext>Porquê contratar</div>
-                                    <div class="widgettitlebar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="" class="linkprojetos">
-                        <div class="projcorpasidesquare">
-                            <div class="widget">
-                                <div class="widgettitle">
-                                    <div class=widgettitletext>Como contratar</div>
-                                    <div class="widgettitlebar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="" class="linkprojetos">
-                        <div class="projcorpasidesquare">
-                            <div class="widget">
-                                <div class="widgettitle">
-                                    <div class=widgettitletext>Importância</div>
-                                    <div class="widgettitlebar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="" class="linkprojetos">
-                        <div class="projcorpasidesquare">
-                            <div class="widget">
-                                <div class="widgettitle">
-                                    <div class=widgettitletext>Algo mais</div>
-                                    <div class="widgettitlebar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </aside>
-    </section>
+                <h3>Importância</h3>
 
-    <section id="secinf" class="projetoscorpo">
-        <section class="projetoscorpocentral">
-            <div class="projetoscorpotitulo">
-                <div class="widgettitle">
-                    <div class=widgettitletext>Inferiores</div>
-                    <div class="widgettitlebar"></div>
-                </div>
-            </div>
-            <div class="projcorptext">
-                <p>Uma breve descrião sobre o que é um projeto arquitetônico...
-                    açdfgkjlagk nklça jçlrjaçoi jlkganç lhr oanl no inralg
-                     a kjçl akj
-                </p>
-                <p>isakfh iouh oijr giohj oçinw ioenorqi nçoi hnorqn iuh quiçn kjf iubqn o ubguopqjn oipnh poih çin boih 
-                     kijwgoijgroimng ipnjoi noaihonhqmibojoi nqóin on oi jq pnoiqn óin inh´poj pn oiqah 
-                      oaihnoignipnhoun~dlksgnjíhwj in oijgíopmna~poj óin nm~pbojhío nlkn pijgpinqa in í
-                      apgj p~ij pijh wpij ´pijhpõjhóijanldfmjóiaqj n
-                </p>
-                <p>ljoiwahfouh iu ijagroihgupih nigja ohirhgoun in oçihgraoih lni oihgoian oingkajbno n 
-                    agoih rgopiahgoin oi hoigahjogíno ingoaihgroign
-                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, alias
+                    aspernatur qui ad, accusantium fugiat aperiam esse labore minus sed molestias
+                    itaque quam! Laboriosam eaque assumenda vitae omnis vel officiis enim numquam
+                    quasi dolorum accusantium temporibus ut itaque dignissimos velit corporis
+                    impedit, placeat hic esse! Mollitia animi qui cum rem architecto eius aut
+                    impedit ducimus excepturi reprehenderit sequi unde, dignissimos suscipit
+                    nihil dolore consequatur, voluptatibus illo iusto dolorem minus? Esse nisi,
+                    ea natus quae ducimus deserunt at sint id. Ratione nesciunt at tempora
+                    dignissimos reiciendis soluta? Id sit officia eveniet ab aliquid, repudiandae
+                    suscipit deserunt, at harum delectus officiis quam?</p>
+                <button class="bt-p">Contratar</button>
             </div>
         </section>
         <aside>
-            <div classe="projcorpaside">
-                <div class="widget">
-                    <div class="widgettitle">
-                        <div class=widgettitletext></div>
-                        <div class="widgettitlebar"></div>
-                    </div>
-                    <div class="widgetbody flex">
-                        <a href="" class="linkprojetos">
-                        <div class="projcorpasidesquare">
-                            <div class="widget">
-                                <div class="widgettitle">
-                                    <div class=widgettitletext>Porquê contratar</div>
-                                    <div class="widgettitlebar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="" class="linkprojetos">
-                        <div class="projcorpasidesquare">
-                            <div class="widget">
-                                <div class="widgettitle">
-                                    <div class=widgettitletext>Como contratar</div>
-                                    <div class="widgettitlebar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="" class="linkprojetos">
-                        <div class="projcorpasidesquare">
-                            <div class="widget">
-                                <div class="widgettitle">
-                                    <div class=widgettitletext>Importância</div>
-                                    <div class="widgettitlebar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                        <a href="" class="linkprojetos">
-                        <div class="projcorpasidesquare">
-                            <div class="widget">
-                                <div class="widgettitle">
-                                    <div class=widgettitletext>Algo mais</div>
-                                    <div class="widgettitlebar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <div class="asidesquare"></div>
+            <div class="asidesquare"></div>
+            <div class="asidesquare"></div>
         </aside>
-    </section>
+    </div>
+</section>
+
+<!--              Hidráulico                     -->
+<section id="sechidra" class="projetoscorpo">
+    <div class="container flex">
+        <section class="projetoscorpocentral">
+            <div class="title-with-bar">
+                <h2>Projeto Hidráulico</h2>
+                <div class="title-bar"></div>
+            </div>
+            <div class="projcorptext">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur
+placeat eius, exercitationem perferendis fugiat mollitia impedit dolorem in omnis asperiores, laborum 
+repellat. Ipsam ea obcaecati iure est rerum fugiat non, cupiditate officiis libero voluptas consectetur
+ex eum magnam? Pariatur iusto ducimus, officiis illum molestiae, similique necessitatibus laboriosam
+voluptatem facere eaque, iure voluptas alias enim! Tempora omnis, officiis sit quae iste cupiditate
+animi numquam obcaecati placeat libero minus, iusto quaerat dolores similique perspiciatis dignissimos
+nostrum temporibus, vel quidem eaque labore. Esse suscipit nostrum iusto cum, voluptates perspiciatis
+eius veniam repellendus excepturi eos recusandae officia vitae eaque natus accusantium accusamus omnis
+velit quae. Id esse laboriosam quasi nihil doloremque! Consequatur porro officiis dolorem amet? Qui
+harum sequi id temporibus sunt, error nobis accusantium a obcaecati labore alias ipsum debitis dolorem,
+adipisci dolores sint animi rem optio excepturi deleniti unde maiores odit libero. Dolorum, vel minus
+eos distinctio illo dignissimos voluptatum consequatur, explicabo debitis laborum in recusandae minima
+expedita ab omnis provident animi dolore. Accusamus quod debitis pariatur cumque facilis beatae amet
+totam vel. Quas reiciendis totam officia nam! Explicabo eaque doloremque quam? Obcaecati voluptatem
+quos sed qui mollitia laborum id, consectetur deserunt fuga quibusdam minima, ipsa, numquam autem
+nulla aspernatur provident.</p>
+
+                <h3>Importância</h3>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, alias
+                    aspernatur qui ad, accusantium fugiat aperiam esse labore minus sed molestias
+                    itaque quam! Laboriosam eaque assumenda vitae omnis vel officiis enim numquam
+                    quasi dolorum accusantium temporibus ut itaque dignissimos velit corporis
+                    impedit, placeat hic esse! Mollitia animi qui cum rem architecto eius aut
+                    impedit ducimus excepturi reprehenderit sequi unde, dignissimos suscipit
+                    nihil dolore consequatur, voluptatibus illo iusto dolorem minus? Esse nisi,
+                    ea natus quae ducimus deserunt at sint id. Ratione nesciunt at tempora
+                    dignissimos reiciendis soluta? Id sit officia eveniet ab aliquid, repudiandae
+                    suscipit deserunt, at harum delectus officiis quam?</p>
+                <button class="bt-p">Contratar</button>
+            </div>
+        </section>
+        <aside>
+            <div class="asidesquare"></div>
+            <div class="asidesquare"></div>
+            <div class="asidesquare"></div>
+        </aside>
+    </div>
+</section>
+
+<!--              Combate a incêndio                     -->
+<section id="seccomb" class="projetoscorpo">
+    <div class="container flex">
+        <section class="projetoscorpocentral">
+            <div class="title-with-bar">
+                <h2>Projeto Combate a incêndio</h2>
+                <div class="title-bar"></div>
+            </div>
+            <div class="projcorptext">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur
+placeat eius, exercitationem perferendis fugiat mollitia impedit dolorem in omnis asperiores, laborum 
+repellat. Ipsam ea obcaecati iure est rerum fugiat non, cupiditate officiis libero voluptas consectetur
+ex eum magnam? Pariatur iusto ducimus, officiis illum molestiae, similique necessitatibus laboriosam
+voluptatem facere eaque, iure voluptas alias enim! Tempora omnis, officiis sit quae iste cupiditate
+animi numquam obcaecati placeat libero minus, iusto quaerat dolores similique perspiciatis dignissimos
+nostrum temporibus, vel quidem eaque labore. Esse suscipit nostrum iusto cum, voluptates perspiciatis
+eius veniam repellendus excepturi eos recusandae officia vitae eaque natus accusantium accusamus omnis
+velit quae. Id esse laboriosam quasi nihil doloremque! Consequatur porro officiis dolorem amet? Qui
+harum sequi id temporibus sunt, error nobis accusantium a obcaecati labore alias ipsum debitis dolorem,
+adipisci dolores sint animi rem optio excepturi deleniti unde maiores odit libero. Dolorum, vel minus
+eos distinctio illo dignissimos voluptatum consequatur, explicabo debitis laborum in recusandae minima
+expedita ab omnis provident animi dolore. Accusamus quod debitis pariatur cumque facilis beatae amet
+totam vel. Quas reiciendis totam officia nam! Explicabo eaque doloremque quam? Obcaecati voluptatem
+quos sed qui mollitia laborum id, consectetur deserunt fuga quibusdam minima, ipsa, numquam autem
+nulla aspernatur provident.</p>
+
+                <h3>Importância</h3>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, alias
+                    aspernatur qui ad, accusantium fugiat aperiam esse labore minus sed molestias
+                    itaque quam! Laboriosam eaque assumenda vitae omnis vel officiis enim numquam
+                    quasi dolorum accusantium temporibus ut itaque dignissimos velit corporis
+                    impedit, placeat hic esse! Mollitia animi qui cum rem architecto eius aut
+                    impedit ducimus excepturi reprehenderit sequi unde, dignissimos suscipit
+                    nihil dolore consequatur, voluptatibus illo iusto dolorem minus? Esse nisi,
+                    ea natus quae ducimus deserunt at sint id. Ratione nesciunt at tempora
+                    dignissimos reiciendis soluta? Id sit officia eveniet ab aliquid, repudiandae
+                    suscipit deserunt, at harum delectus officiis quam?</p>
+                <button class="bt-p">Contratar</button>
+            </div>
+        </section>
+        <aside>
+            <div class="asidesquare"></div>
+            <div class="asidesquare"></div>
+            <div class="asidesquare"></div>
+        </aside>
+    </div>
+</section>
+
+<!--              Elético                     -->
+<section id="secelet" class="projetoscorpo">
+    <div class="container flex">
+        <section class="projetoscorpocentral">
+            <div class="title-with-bar">
+                <h2>Projeto Elético</h2>
+                <div class="title-bar"></div>
+            </div>
+            <div class="projcorptext">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur
+placeat eius, exercitationem perferendis fugiat mollitia impedit dolorem in omnis asperiores, laborum 
+repellat. Ipsam ea obcaecati iure est rerum fugiat non, cupiditate officiis libero voluptas consectetur
+ex eum magnam? Pariatur iusto ducimus, officiis illum molestiae, similique necessitatibus laboriosam
+voluptatem facere eaque, iure voluptas alias enim! Tempora omnis, officiis sit quae iste cupiditate
+animi numquam obcaecati placeat libero minus, iusto quaerat dolores similique perspiciatis dignissimos
+nostrum temporibus, vel quidem eaque labore. Esse suscipit nostrum iusto cum, voluptates perspiciatis
+eius veniam repellendus excepturi eos recusandae officia vitae eaque natus accusantium accusamus omnis
+velit quae. Id esse laboriosam quasi nihil doloremque! Consequatur porro officiis dolorem amet? Qui
+harum sequi id temporibus sunt, error nobis accusantium a obcaecati labore alias ipsum debitis dolorem,
+adipisci dolores sint animi rem optio excepturi deleniti unde maiores odit libero. Dolorum, vel minus
+eos distinctio illo dignissimos voluptatum consequatur, explicabo debitis laborum in recusandae minima
+expedita ab omnis provident animi dolore. Accusamus quod debitis pariatur cumque facilis beatae amet
+totam vel. Quas reiciendis totam officia nam! Explicabo eaque doloremque quam? Obcaecati voluptatem
+quos sed qui mollitia laborum id, consectetur deserunt fuga quibusdam minima, ipsa, numquam autem
+nulla aspernatur provident.</p>
+
+                <h3>Importância</h3>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, alias
+                    aspernatur qui ad, accusantium fugiat aperiam esse labore minus sed molestias
+                    itaque quam! Laboriosam eaque assumenda vitae omnis vel officiis enim numquam
+                    quasi dolorum accusantium temporibus ut itaque dignissimos velit corporis
+                    impedit, placeat hic esse! Mollitia animi qui cum rem architecto eius aut
+                    impedit ducimus excepturi reprehenderit sequi unde, dignissimos suscipit
+                    nihil dolore consequatur, voluptatibus illo iusto dolorem minus? Esse nisi,
+                    ea natus quae ducimus deserunt at sint id. Ratione nesciunt at tempora
+                    dignissimos reiciendis soluta? Id sit officia eveniet ab aliquid, repudiandae
+                    suscipit deserunt, at harum delectus officiis quam?</p>
+                <button class="bt-p">Contratar</button>
+            </div>
+        </section>
+        <aside>
+            <div class="asidesquare"></div>
+            <div class="asidesquare"></div>
+            <div class="asidesquare"></div>
+        </aside>
+    </div>
+</section>
+
+ <!--              Estrutural                     -->
+<section id="secest" class="projetoscorpo">
+    <div class="container flex">
+        <section class="projetoscorpocentral">
+            <div class="title-with-bar">
+                <h2>Projeto Estrutural</h2>
+                <div class="title-bar"></div>
+            </div>
+            <div class="projcorptext">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur
+placeat eius, exercitationem perferendis fugiat mollitia impedit dolorem in omnis asperiores, laborum 
+repellat. Ipsam ea obcaecati iure est rerum fugiat non, cupiditate officiis libero voluptas consectetur
+ex eum magnam? Pariatur iusto ducimus, officiis illum molestiae, similique necessitatibus laboriosam
+voluptatem facere eaque, iure voluptas alias enim! Tempora omnis, officiis sit quae iste cupiditate
+animi numquam obcaecati placeat libero minus, iusto quaerat dolores similique perspiciatis dignissimos
+nostrum temporibus, vel quidem eaque labore. Esse suscipit nostrum iusto cum, voluptates perspiciatis
+eius veniam repellendus excepturi eos recusandae officia vitae eaque natus accusantium accusamus omnis
+velit quae. Id esse laboriosam quasi nihil doloremque! Consequatur porro officiis dolorem amet? Qui
+harum sequi id temporibus sunt, error nobis accusantium a obcaecati labore alias ipsum debitis dolorem,
+adipisci dolores sint animi rem optio excepturi deleniti unde maiores odit libero. Dolorum, vel minus
+eos distinctio illo dignissimos voluptatum consequatur, explicabo debitis laborum in recusandae minima
+expedita ab omnis provident animi dolore. Accusamus quod debitis pariatur cumque facilis beatae amet
+totam vel. Quas reiciendis totam officia nam! Explicabo eaque doloremque quam? Obcaecati voluptatem
+quos sed qui mollitia laborum id, consectetur deserunt fuga quibusdam minima, ipsa, numquam autem
+nulla aspernatur provident.</p>
+
+                <h3>Importância</h3>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, alias
+                    aspernatur qui ad, accusantium fugiat aperiam esse labore minus sed molestias
+                    itaque quam! Laboriosam eaque assumenda vitae omnis vel officiis enim numquam
+                    quasi dolorum accusantium temporibus ut itaque dignissimos velit corporis
+                    impedit, placeat hic esse! Mollitia animi qui cum rem architecto eius aut
+                    impedit ducimus excepturi reprehenderit sequi unde, dignissimos suscipit
+                    nihil dolore consequatur, voluptatibus illo iusto dolorem minus? Esse nisi,
+                    ea natus quae ducimus deserunt at sint id. Ratione nesciunt at tempora
+                    dignissimos reiciendis soluta? Id sit officia eveniet ab aliquid, repudiandae
+                    suscipit deserunt, at harum delectus officiis quam?</p>
+                <button class="bt-p">Contratar</button>
+            </div>
+        </section>
+        <aside>
+            <div class="asidesquare"></div>
+            <div class="asidesquare"></div>
+            <div class="asidesquare"></div>
+        </aside>
+    </div>
+</section>
+
+<!--              Inferiores                     -->
+<section id="secinf" class="projetoscorpo">
+    <div class="container flex">
+        <section class="projetoscorpocentral">
+            <div class="title-with-bar">
+                <h2>Projeto Inferiores</h2>
+                <div class="title-bar"></div>
+            </div>
+            <div class="projcorptext">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur
+placeat eius, exercitationem perferendis fugiat mollitia impedit dolorem in omnis asperiores, laborum 
+repellat. Ipsam ea obcaecati iure est rerum fugiat non, cupiditate officiis libero voluptas consectetur
+ex eum magnam? Pariatur iusto ducimus, officiis illum molestiae, similique necessitatibus laboriosam
+voluptatem facere eaque, iure voluptas alias enim! Tempora omnis, officiis sit quae iste cupiditate
+animi numquam obcaecati placeat libero minus, iusto quaerat dolores similique perspiciatis dignissimos
+nostrum temporibus, vel quidem eaque labore. Esse suscipit nostrum iusto cum, voluptates perspiciatis
+eius veniam repellendus excepturi eos recusandae officia vitae eaque natus accusantium accusamus omnis
+velit quae. Id esse laboriosam quasi nihil doloremque! Consequatur porro officiis dolorem amet? Qui
+harum sequi id temporibus sunt, error nobis accusantium a obcaecati labore alias ipsum debitis dolorem,
+adipisci dolores sint animi rem optio excepturi deleniti unde maiores odit libero. Dolorum, vel minus
+eos distinctio illo dignissimos voluptatum consequatur, explicabo debitis laborum in recusandae minima
+expedita ab omnis provident animi dolore. Accusamus quod debitis pariatur cumque facilis beatae amet
+totam vel. Quas reiciendis totam officia nam! Explicabo eaque doloremque quam? Obcaecati voluptatem
+quos sed qui mollitia laborum id, consectetur deserunt fuga quibusdam minima, ipsa, numquam autem
+nulla aspernatur provident.</p>
+
+                <h3>Importância</h3>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, alias
+                    aspernatur qui ad, accusantium fugiat aperiam esse labore minus sed molestias
+                    itaque quam! Laboriosam eaque assumenda vitae omnis vel officiis enim numquam
+                    quasi dolorum accusantium temporibus ut itaque dignissimos velit corporis
+                    impedit, placeat hic esse! Mollitia animi qui cum rem architecto eius aut
+                    impedit ducimus excepturi reprehenderit sequi unde, dignissimos suscipit
+                    nihil dolore consequatur, voluptatibus illo iusto dolorem minus? Esse nisi,
+                    ea natus quae ducimus deserunt at sint id. Ratione nesciunt at tempora
+                    dignissimos reiciendis soluta? Id sit officia eveniet ab aliquid, repudiandae
+                    suscipit deserunt, at harum delectus officiis quam?</p>
+                <button class="bt-p">Contratar</button>
+            </div>
+        </section>
+        <aside>
+            <div class="asidesquare"></div>
+            <div class="asidesquare"></div>
+            <div class="asidesquare"></div>
+        </aside>
+    </div>
+</section>
+
+<!--              SPDA                     -->
+<section id='secspda' class="projetoscorpo">
+    <div class="container flex">
+        <section class="projetoscorpocentral">
+            <div class="title-with-bar">
+                <h2>Projeto SPDA</h2>
+                <div class="title-bar"></div>
+            </div>
+            <div class="projcorptext">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur
+placeat eius, exercitationem perferendis fugiat mollitia impedit dolorem in omnis asperiores, laborum 
+repellat. Ipsam ea obcaecati iure est rerum fugiat non, cupiditate officiis libero voluptas consectetur
+ex eum magnam? Pariatur iusto ducimus, officiis illum molestiae, similique necessitatibus laboriosam
+voluptatem facere eaque, iure voluptas alias enim! Tempora omnis, officiis sit quae iste cupiditate
+animi numquam obcaecati placeat libero minus, iusto quaerat dolores similique perspiciatis dignissimos
+nostrum temporibus, vel quidem eaque labore. Esse suscipit nostrum iusto cum, voluptates perspiciatis
+eius veniam repellendus excepturi eos recusandae officia vitae eaque natus accusantium accusamus omnis
+velit quae. Id esse laboriosam quasi nihil doloremque! Consequatur porro officiis dolorem amet? Qui
+harum sequi id temporibus sunt, error nobis accusantium a obcaecati labore alias ipsum debitis dolorem,
+adipisci dolores sint animi rem optio excepturi deleniti unde maiores odit libero. Dolorum, vel minus
+eos distinctio illo dignissimos voluptatum consequatur, explicabo debitis laborum in recusandae minima
+expedita ab omnis provident animi dolore. Accusamus quod debitis pariatur cumque facilis beatae amet
+totam vel. Quas reiciendis totam officia nam! Explicabo eaque doloremque quam? Obcaecati voluptatem
+quos sed qui mollitia laborum id, consectetur deserunt fuga quibusdam minima, ipsa, numquam autem
+nulla aspernatur provident.</p>
+
+                <h3>Importância</h3>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, alias
+                    aspernatur qui ad, accusantium fugiat aperiam esse labore minus sed molestias
+                    itaque quam! Laboriosam eaque assumenda vitae omnis vel officiis enim numquam
+                    quasi dolorum accusantium temporibus ut itaque dignissimos velit corporis
+                    impedit, placeat hic esse! Mollitia animi qui cum rem architecto eius aut
+                    impedit ducimus excepturi reprehenderit sequi unde, dignissimos suscipit
+                    nihil dolore consequatur, voluptatibus illo iusto dolorem minus? Esse nisi,
+                    ea natus quae ducimus deserunt at sint id. Ratione nesciunt at tempora
+                    dignissimos reiciendis soluta? Id sit officia eveniet ab aliquid, repudiandae
+                    suscipit deserunt, at harum delectus officiis quam?</p>
+                <button class="bt-p">Contratar</button>
+            </div>
+        </section>
+        <aside>
+            <div class="asidesquare"></div>
+            <div class="asidesquare"></div>
+            <div class="asidesquare"></div>
+        </aside>
+    </div>
+</section>
+
     <footer>
         <div class="container column">
             <div class="footermenu">
