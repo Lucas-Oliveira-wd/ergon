@@ -82,9 +82,15 @@ header nav{
     min-width: 8rem;
     height: 100%;
     text-transform: uppercase;
-    padding: .8rem 0;
     text-align: center;
     transition: all .4s;
+}
+
+.menu-item a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: .8rem 0;
 }
 
 .menu .menu-item h3{
