@@ -1,5 +1,3 @@
-function socilitado(e) {
-    if(e.keyCode == 13) {
-        let texto = document.getElementById()
-    }
-}
+document.querySelector('.menu-hamburguer-serv').addEventListener('click',function(){
+    document.querySelector('#section-serv').classList.toggle("show-menu-serv")
+});

@@ -71,19 +71,54 @@
             </nav>
         </div>
     </header>
-    <section>
-        <div id="servicostopo">
+    <section id="section-serv">
+        <div class='container'>
+        <div id="serv-top">
+            <div class="menu-hamburguer-serv">
+                <div class="hamburguer-line" id="hamburguer-line1"></div>
+                <div class="hamburguer-line" id="hamburguer-line2"></div>
+                <div class="hamburguer-line" id="hamburguer-line3"></div>
+            </div>
             <nav>
-                <ul>
-                    <li><a href=""><h2>PROJETOS</h2></a></li>
-                    <li><a href=""><h2>ACOMPANHAMENTO</h2></a></li>
-                    <li><a href=""><h2>EXECUÇÃO</h2></a></li>
+                <ul id="servicosmenu">
+                    <li class="serv-menu-item"><a href="#projetos">Projetos</a></li>
+                    <li class="serv-menu-item"><a href="#acompanhamento">acompanhamento</a></li>
+                    <li class="serv-menu-item"><a href="#execucao">Exececução</a></li>
                 </ul>
             </nav>
         </div>
+
+        <!--            projetos         -->
+        <section id="projetos" class="section-serv-des">
+            <div class="serv-desc-title">
+                <h2>projetos</h2>
+                <div class='title-bar'></div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam quae, saepe sequi voluptatem cumque voluptates amet in officiis, quia quis ab blanditiis eos perferendis praesentium ipsum? Doloremque repudiandae doloribus beatae recusandae error illum eaque blanditiis. Labore officia cum ipsum rerum eum nesciunt nostrum neque incidunt praesentium, laudantium quaerat, nisi similique!</p>
+        </section>
+
+        <!--            acompanhamento         -->
+        <section id="acompanhamento" class="section-serv-des">
+            <div class="serv-desc-title">
+                <h2>acompanhamento</h2>
+                <div class='title-bar'></div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam quae, saepe sequi voluptatem cumque voluptates amet in officiis, quia quis ab blanditiis eos perferendis praesentium ipsum? Doloremque repudiandae doloribus beatae recusandae error illum eaque blanditiis. Labore officia cum ipsum rerum eum nesciunt nostrum neque incidunt praesentium, laudantium quaerat, nisi similique!</p>
+        </section>
+
+        <!--            execução         -->
+        <section id="execucao" class="section-serv-des">
+            <div class="serv-desc-title">
+                <h2>execução</h2>
+                <div class='title-bar'></div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam quae, saepe sequi voluptatem cumque voluptates amet in officiis, quia quis ab blanditiis eos perferendis praesentium ipsum? Doloremque repudiandae doloribus beatae recusandae error illum eaque blanditiis. Labore officia cum ipsum rerum eum nesciunt nostrum neque incidunt praesentium, laudantium quaerat, nisi similique!</p>
+        </section>
+    </div>
+
     </section>
     <section id="servcorpo">
-        <div class="divformserv">
+        <div class="divformserv" style="display: none;">
             <form class="servformulario">
                 <select name="Tipos de projetos">
                     <option>tipo 1</option>
@@ -145,6 +180,7 @@
             </div>
         </div>
     </footer>
-    <script src="homepage.js"></script>
+    <script src="assets/js/homepage.js"></script>
+    <script src="assets/js/servicos.js"></script>
 </body>
 </html>

@@ -1,3 +1,82 @@
+#section-msg{
+    height: 100vh;
+    background: var(--color-primary);
+}
+
+#section-msg .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#section-msg form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#section-msg h2{
+    color: var(--color-secundary);
+}
+
+#section-msg .title{
+    display:flex;
+    justify-content: center;
+    margin:0;
+    align-items: center;
+}
+
+#section-msg .title-bar{
+    height: .2rem;
+    width: 25rem;
+    border-radius: 80%;
+    margin: 0;
+}
+
+.form-item{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5rem;
+}
+
+.form-item input{
+    border:.07rem solid var(--color-primary);
+    border-radius: .05rem;
+    margin-top:.5rem;
+    padding: .2rem .5rem;
+    font: normal normal 400 1rem/1.3rem var(--font-secundary);
+    width: 100%;
+}
+
+.form-item textarea{
+    margin-top: .5rem;
+    max-width: 100%;
+    min-width: 100%;
+    border:.07rem solid var(--color-primary);
+    max-height: 5rem;
+    min-height: 5rem;
+    padding: .2rem .5rem;
+    font: normal normal 400 1rem/1.3rem var(--font-secundary);
+}
+
+#button-form-contato{
+    margin: 0 1.5rem;
+    background: linear-gradient(to top, var(--color-secundary),var(--color-secundary-lighter));
+    color: #fff;
+    font: normal normal 1rem/2rem var(--font-action);
+    text-transform: uppercase;
+}
+
+#button-form-contato:hover{
+    background: linear-gradient(to top, var(--color-secundary-darker),var(--color-secundary));
+}
+
+.form-item label{
+    font:normal normal 400 1rem/1rem var(--font-secundary)
+}
+
+
+
 .widgetplayer{
     padding-top: 20px;
 }

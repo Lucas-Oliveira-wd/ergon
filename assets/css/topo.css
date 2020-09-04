@@ -61,7 +61,7 @@ header{
     background-color: #fff;
     position: sticky;
     top: 0;
-    z-index: 20;
+    z-index: 30;
 }
 
 /*Flexibilizando o site e colocando uma largura padrão de 990px*/

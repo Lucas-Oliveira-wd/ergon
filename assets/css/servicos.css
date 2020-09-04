@@ -1,61 +1,141 @@
-#servicostopo{
-    background-image: url(../img/relacaocomcliente.png);
-    background-position: center;
-    background-size: cover;
-    height: 300px;
+#section-serv{
+    background: #eee;
+}
+
+/*===================================================================
+                parte de cima de serviços
+====================================================================*/
+#serv-top{
+    height: 5   rem;
+    display: flex;
+}
+
+/*      menu hamburguer     */
+.menu-hamburguer-serv{
+    display: flex;
+    height: 3rem;
+    width: 3rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: fixed;
+    right: 2rem;
+    top: 10rem;
+    overflow: visible;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.menu-hamburguer-serv .hamburguer-line{
+    height: .3rem;
+    width: 100%;
+    background: #bbb;
+    box-shadow: .05rem .1rem 1px #333;
+    border-radius: .2rem;
+    transition: all 1s;
+}
+
+/*      menu lateral de servicos        */
+
+#servicosmenu{
+    position: fixed;
+    right: 0;
+    top: 15%;
+    height: 30rem;
+    width: 20rem;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(20rem);
+    transition: transform 1s;
+    box-shadow: -.5rem -1rem 5rem #0003;
+}
+
+/*          menu servicos aberto        */
+.show-menu-serv #servicosmenu{
+    transform: translate(0);
+}
+
+.show-menu-serv #hamburguer-line2{
+    display: none;
+}
+
+.show-menu-serv #hamburguer-line3{
+    transform: translate(0,.45rem) rotate(45deg);
+    box-shadow: .05rem 0 .5px #333;
+}
+
+.show-menu-serv #hamburguer-line1{
+    transform: translate(0,-.45rem) rotate(-45deg);
+}
+
+.serv-menu-item{
+    flex: 1;
+    text-align: center;
+    max-height: 5rem;
+    position: relative;
+}
+
+.serv-menu-item:hover{
+    background: #eee;
+}
+
+.serv-menu-item::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 1rem solid var(--color-secundary-darker);
+    border-right: .7rem solid transparent;
+    border-bottom: 1rem solid transparent;
+    border-left: .7rem solid transparent;
+    position: absolute;
+    left: .1rem;
+    top: 1.3rem;
+    transform: rotate(-90deg);
+    display: none;
+}
+
+.serv-menu-item:hover::before{
+    display: block;
+}
+
+.serv-menu-item:hover a{
+    color: var(--color-secundary-darker);
+}
+
+.serv-menu-item a{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-}
-#servicostopo ul{
-    list-style: none;
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-#servicostopo a h2{
-    color: #ccc;
-}
-#servicostopo a{
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font: normal normal 500 1.5rem/1.8rem var(--font-primary);
+    color: var(--color-primary-lighter);
 }
-#servicostopo ul li{
-    background-image: url(../img/fundolimenuservicos.png);
-    background-position: center;
-    background-size: cover;
-    flex: 1;
-    margin: 0 50px;
-    width: 280px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
+
+.section-serv-des{
+    height: 100vh;
 }
-.divformserv{
-    max-width: 990px;
+
+.section-serv-des h2{
+    padding: 2rem;
+    font: normal normal 500 3rem/4rem var(--font-primary);
+    color: #444;
 }
-#servcorpo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.section-serv-des .title-bar{
+    margin: 0 2rem;
 }
-.servformulario button{
-    background-image: url(../img/fundobotao.png);
-    background-position: center;
-    background-size: cover;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.section-serv-des p{
+    margin: 5rem 0 0 0 ;
+    background: #e2e2e2;
+    display: block;
+    min-height: 60%;
 }
-.servformulario button h5{
-    color: #ddd;
+
+.serv-desc-title{
+    width: 100%;
+    display: block;
 }
 
