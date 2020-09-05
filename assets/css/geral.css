@@ -43,6 +43,7 @@ html{
 
 p{
     font: normal normal 400 16px/27px var(--font-secundary);
+    text-indent: 3rem;
 }
 
 input[type="text"]{

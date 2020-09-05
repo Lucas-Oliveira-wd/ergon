@@ -1,3 +1,22 @@
+#section-presents{
+    height: 100vh;
+    background: #00001e;
+}
+
+#section-presents .container{
+    display: flex;
+}
+
+#section-presents .desc{
+    height: 100%;
+    flex: 1;
+    color: #fff;
+}
+
+#section-presents .img-wrapper{
+    flex: 1;
+}
+
 #banner{
     background-image: url('../img/engenheiros.jpg');
     background-position: center;
@@ -86,6 +105,7 @@
 .show-more-company .fa-times, .show-more-mission .fa-times,
 .show-valores .fa-times, .show-nos .fa-times{
     display: block !important;
+    cursor: pointer;
 }
 
 /*          show-menu-button-more-as-company        */
@@ -182,10 +202,9 @@
     position: absolute;
     top: 0; left: 35%; right: 35%;
     border-radius: 5rem;
-    outline: .15rem solid var(--color-primary);
+    outline: .0006rem solid var(--color-primary);
     outline-offset: .4rem;
     -moz-outline-radius: 5rem;
-    border: .1rem solid var(--color-primary);
 }
 
 .show-nos .banner:nth-child(5) h2{
