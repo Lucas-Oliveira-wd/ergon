@@ -25,6 +25,17 @@
     display: flex;
     flex-wrap: wrap;
     flex: 2;
+    position: relative;
+}
+
+.banneroptions .fa-times{
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 1.8rem;
+    color: #555;
+    text-shadow: .05rem .1rem 1px #0005;
+    display: none;
 }
 
 .banner1, .banner2, .banner3, .banner4, .banner5, .banner6{
@@ -32,7 +43,9 @@
     color: #fff;
     padding: 20px;
     min-width: 20rem;
+    transition: all 1s;
 }
+
 .banner4, .banner1{
     background-color: var(--color-secundary-lighter);
 }
@@ -43,23 +56,183 @@
     background-color: var(--color-secundary-darker);
 }
 
-.banneroptions .bannertitle{
+.bannertitle{
     font-size: 1.4rem;
     word-spacing: .2rem
 }
-.banneroptions .bannerdesc{
+.bannerdesc{
     font-size: 1rem;
     line-height: 1.6rem;
     margin-top: 20px;
     margin-bottom: 20px;
 }
-#banner .column .banneroptions .saibamais{
+
+.desc-full{
+    display:none;
+}
+
+.saibamais{
     display: inline-block;
     border: 1px solid #fff;
-    padding: 5px;
-    font-size: 12px;
+    padding:.2rem .5rem;
+    font-size: 1.1rem;
     color: #fff;
+    cursor: pointer;
+    transition: all 1s;
 }
+
+/*          mastar o 'X' apenas quando umas das descrições estiverem sendo exibidas*/
+
+.show-more-company .fa-times, .show-more-mission .fa-times,
+.show-valores .fa-times, .show-nos .fa-times{
+    display: block !important;
+}
+
+/*          show-menu-button-more-as-company        */
+
+.show-more-company .banner2,
+.show-more-company .banner3,.show-more-company .banner4,
+.show-more-company .banner5,.show-more-company .banner6{
+    display: none;
+}
+
+.show-more-company .banner, .show-more-mission .banner,
+.show-valores .banner, .show-nos .banner{
+    background: #efefef;
+    flex-direction: column;
+}          
+
+.show-more-company .saibamais, .show-more-mission .saibamais,
+.show-valores .saibamais, .show-nos .saibamais{
+    display: none;
+}
+
+.show-more-company .bannertitle, .show-more-mission .bannertitle,
+.show-valores .bannertitle, .show-nos .bannertitle{
+    color: #444;
+    border-bottom: .2rem solid var(--color-secundary-darker);
+    padding: 0 1rem 2rem 2rem;
+    max-width: 30rem;
+}
+
+.show-more-company .bannerdesc, .show-more-mission .bannerdesc,
+.show-valores .bannerdesc, .show-nos .bannerdesc{
+    color: #333;
+}
+
+.show-more-company .desc-short,.show-more-mission .desc-short,
+.show-valores .desc-short,.show-nos .desc-short{
+    display: none !important;
+}
+
+.show-more-company .desc-full,.show-more-mission .desc-full,
+.show-valores .desc-full, .show-nos .desc-full{
+    display:block;
+}
+
+/*      .show-more-mission      */
+
+.show-more-mission .banner1,
+.show-more-mission .banner3,.show-more-mission .banner4,
+.show-more-mission .banner5,.show-more-mission .banner6{
+    display: none;
+}
+
+/*          show valores        */
+
+.show-valores .banner1,
+.show-valores .banner3,.show-valores .banner2,
+.show-valores .banner5,.show-valores .banner6{
+    display: none;
+}
+
+/*              show nos            */
+
+.show-nos .banner1,
+.show-nos .banner3,.show-nos .banner2,
+.show-nos .banner4,.show-nos .banner6{
+    display: none;
+}
+
+.show-nos .banner:nth-child(5) .bannertitle{
+    margin: 0;
+    width: 100%;
+    max-width: none;
+    text-align: center;
+}
+
+.show-nos .banner:nth-child(5) .desc-full{
+    display: flex;
+    align-items: center;
+    padding:0;
+}
+
+.show-nos .banner:nth-child(5) .desc-team{
+    flex: 1;
+    position: relative;
+    height: 100%;
+}
+
+.show-nos .banner:nth-child(5) .img-wrapper{
+    background: #bbb;
+    height: 6rem;
+    width: 6rem;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    top: 0; left: 35%; right: 35%;
+    border-radius: 5rem;
+    outline: .15rem solid var(--color-primary);
+    outline-offset: .4rem;
+    -moz-outline-radius: 5rem;
+    border: .1rem solid var(--color-primary);
+}
+
+.show-nos .banner:nth-child(5) h2{
+    position: absolute;
+    top: 12rem;
+    text-align: center;
+    font-size: 1.3rem;
+    width: 100%;
+    text-decoration: underline;
+    color: var(--color-primary);
+}
+
+.show-nos .banner:nth-child(5) .desc-team h3{
+    position: absolute;
+    top: 9.5rem;
+    font-size: 1.4rem;
+    width: 100%;
+    text-align: center;
+    font-weight: 100;
+    font-family: var(--font-secundary);
+}
+
+.show-nos .banner:nth-child(5) .social-media{
+    position: absolute;
+    top: 15rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.show-nos .banner:nth-child(5) .social-media i{
+    margin: 0 .4rem;
+    color: var(--color-primary);
+    font-size: 1.2rem;
+}
+
+.show-nos .banner:nth-child(5) .social-media i:hover{
+    color: var(--color-primary-lighter)
+}
+
+.show-nos .banner:nth-child(5) .desc-team p{
+    position: absolute;
+    top: 13.5rem;
+    background: #3e5;
+    width: 100%;
+}
+
 /*Identação*/
 @media (max-width:750px){
     #banner .column .bannerheadline h1{

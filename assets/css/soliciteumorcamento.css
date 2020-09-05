@@ -37,6 +37,7 @@
     display: flex;
     flex-direction: column;
     padding: 0 1.5rem;
+    position: relative;
 }
 
 .form-item input{
@@ -46,6 +47,10 @@
     padding: .2rem .5rem;
     font: normal normal 400 1rem/1.3rem var(--font-secundary);
     width: 100%;
+}
+
+.form-item input:focus{
+    border:.07rem solid var(--color-secundary);
 }
 
 .form-item textarea{
@@ -58,6 +63,12 @@
     padding: .2rem .5rem;
     font: normal normal 400 1rem/1.3rem var(--font-secundary);
 }
+
+.form-item textarea:focus{
+    border:.07rem solid var(--color-secundary);
+}
+
+
 
 #button-form-contato{
     margin: 0 1.5rem;
@@ -73,6 +84,42 @@
 
 .form-item label{
     font:normal normal 400 1rem/1rem var(--font-secundary)
+}
+
+#span-whats{
+    position: absolute;
+    background: var(--color-secundary-darker);
+    border-radius: .4rem;
+    left: 8rem;
+    top:-3rem;
+    padding:.3rem .5rem;
+    display: none;
+}
+
+#span-whats::after{
+    content: '';
+    position: absolute;
+    border-top: 1rem solid var(--color-secundary-darker);
+    border-right: 1rem solid transparent;
+    border-left: 1rem solid transparent;
+    border-bottom: 1rem solid transparent;
+    top: 2.8em;
+    right: 12rem;
+}
+
+#span-whats p{
+    color: #fff;
+    font: normal normal 500 1rem/1.3rem var(--font-action);
+}
+
+#span-whats i{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #fff;
+}
+
+input:focus ~ #span-whats{
+    display: block;
 }
 
 

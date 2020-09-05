@@ -100,8 +100,17 @@ header nav{
 
 .menu .menu-item:hover{
     background: #f0f0f5;
-    border-radius: .4rem
 }
+
+/*          item-menu active*/
+.menu .active{
+    background: #f0f0f5;
+}
+
+.menu .active h3{
+    color: var(--color-secundary);
+}
+
 
 .menu .menu-item:hover h3{
     color: var(--color-secundary);
@@ -172,6 +181,10 @@ header nav{
 }
 
 #home-top .main-menu-item a:hover{
+    color: var(--color-secundary);
+}
+
+#home-top .main-menu-item a:active{
     color: var(--color-secundary);
 }
 
