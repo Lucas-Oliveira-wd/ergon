@@ -138,7 +138,7 @@ function swapSlidRight(){
         slideFix();
 }
 
-function swapSlidleft(){
+function swapSlidLeft(){
         if(sbody.classList.contains(slclasses[0]) === true){
             sbody.classList.remove(slclasses[0]);
             sbody.classList.add(slclasses[7]);

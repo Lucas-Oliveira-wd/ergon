@@ -60,12 +60,11 @@
 }
 
 header{
-    height: 4rem;
+    height: 3.5rem;
     background-color: #fff;
     position: sticky;
     top: 0;
     z-index: 30;
-    margin-top: .5rem;
 }
 
 /*Flexibilizando o site e colocando uma largura padrão de 990px*/
@@ -84,7 +83,7 @@ header nav{
 
 .menu .menu-item{
     float: left;
-    max-width: 11rem;
+    max-width: 16rem;
     min-width: 7rem;
     height: 100%;
     text-transform: uppercase;
@@ -94,15 +93,17 @@ header nav{
 }
 
 .menu-item a{
-    display: block;
+    display: flex;
     height: 100%;
     width: 100%;
-    padding: .8rem .5rem;
+    justify-content: center;
+    padding: 0 10px;
+    align-items: center;
     transition: all .2s;
 }
 
 .menu .menu-item h3{
-    font: normal normal 800 1rem/1.2rem var(--font-secundary);
+    font: normal normal 800 .9rem/1.2rem var(--font-secundary);
     color: var(--color-primary);
     transition: all .5s;
 }
