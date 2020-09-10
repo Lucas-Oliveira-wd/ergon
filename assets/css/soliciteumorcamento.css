@@ -1,6 +1,8 @@
 #section-msg{
-    height: 100vh;
     background: var(--color-primary);
+    margin-top: 2rem;
+    position: relative;
+    height: 40rem;
 }
 
 #section-msg .container{
@@ -11,8 +13,10 @@
 
 #section-msg form{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 #section-msg h2{
@@ -23,6 +27,7 @@
     display:flex;
     justify-content: center;
     margin:0;
+    width: 100%;
     align-items: center;
 }
 
@@ -38,19 +43,28 @@
     flex-direction: column;
     padding: 0 1.5rem;
     position: relative;
+    min-width: 50%;
+}
+
+.form-item:nth-child(6){
+    width: 100%;
 }
 
 .form-item input{
     border:.07rem solid var(--color-primary);
-    border-radius: .05rem;
     margin-top:.5rem;
-    padding: .2rem .5rem;
     font: normal normal 400 1rem/1.3rem var(--font-secundary);
     width: 100%;
 }
 
 .form-item input:focus{
     border:.07rem solid var(--color-secundary);
+}
+
+.form-item select{
+    width: 40%;
+    margin-top: .5rem;
+    border:.07rem solid var(--color-primary);
 }
 
 .form-item textarea{
@@ -74,8 +88,11 @@
     margin: 0 1.5rem;
     background: linear-gradient(to top, var(--color-secundary),var(--color-secundary-lighter));
     color: #fff;
-    font: normal normal 1rem/2rem var(--font-action);
+    font: normal normal 600 1rem/1rem var(--font-action);
     text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 40%;
+    max-height: 2.8rem;
 }
 
 #button-form-contato:hover{

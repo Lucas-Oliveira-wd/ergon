@@ -19,41 +19,67 @@ body{
     --font-primary: Montserrat, sans-serif;
     --font-secundary: Roboto, sans-serif;
     --font-action: Lato, sans-serif;
+    --color-primary-1: #00001e10;
+    --color-primary-2: #00001e20;
+    --color-primary-3: #00001e30;
+    --color-primary-4: #00001e40;
+    --color-primary-5: #00001e50;
+    --color-primary-6: #00001e60;
+    --color-primary-7: #00001e70;
+    --color-primary-8: #00001e80;
+    --color-primary-9: #00001e90;
     --color-primary: #00001e;
     --color-primary-lighter: #00007d;
     --color-primary-almost-white: #ececff;
+    --color-secundary-1: #00ff0110;
+    --color-secundary-2: #00ff0120;
+    --color-secundary-3: #00ff0130;
+    --color-secundary-4: #00ff0140;
+    --color-secundary-5: #00ff0150;
+    --color-secundary-6: #00ff0160;
+    --color-secundary-7: #00ff0170;
+    --color-secundary-8: #00ff0180;
+    --color-secundary-9: #00ff0190;
     --color-secundary: #00ff01;
+    --color-secundary-rgba: rgba(0, 255, 1, 1);
     --color-secundary-lighter: #33ff33;
     --color-secundary-darker: #00ea00;
     --color-secundary-almost-white: #ccffcc;
     --color-secundary-almost-black: #002400;
     --color-proj-1: #964aa5;
-    --color-proj-2: #ae0d0b;
+    --color-proj-2: #026057;
     --color-proj-3: #1393f6;
-    --color-proj-4: #d30c0f;
-    --color-proj-5: #ff6d00;
-    --color-proj-6: #026057;
-    --color-proj-7: #000;
-    --color-proj-8: #e6e813;
+    --color-proj-4: #ff6d00;
+    --color-proj-5: #d30c0f;
+    --color-proj-6: #e6e813;
 }
 
 html{
     scroll-behavior: smooth;
 }
 
-p{
-    font: normal normal 400 16px/27px var(--font-secundary);
-    text-indent: 3rem;
-}
-
-input[type="text"]{
+input{
     padding: .4rem .5rem;
     border:none;
-    font-family: var(--font-action)
+    font:normal normal 400 1rem/1.2rem var(--font-action);
+    border-radius: 5px;
+}
+
+select{  
+    padding: .4rem 2.5rem .4rem .5rem;
+    border:none;
+    font:normal normal 400 1rem/1.2rem var(--font-action);
+    border-radius: 5px;
+}
+
+textarea{
+    padding: .4rem .5rem;
+    font:normal normal 400 1rem/1.2rem var(--font-action);
 }
 
 h1,h2,h3,h4,h5,h6{
     font-family: var(--font-primary);
+    text-transform: uppercase;
 }
 
 h1{
@@ -80,17 +106,13 @@ h6{
     font-size: 1rem;
 }
 
-
-.img-wrapper{
-    overflow: hidden;
-}
-
 button{
     border: none;
     cursor: pointer;
     background: linear-gradient(to top, #bbb, #fff);
     padding: .2rem .5rem;
     box-shadow: .1rem .2rem 5px #0006;
+    border-radius: 5px;
 }
 
 button:hover{
@@ -100,8 +122,12 @@ button:hover{
 }
 
 p{
-    font-family: var(--font-primary);
     padding: .5rem;
+    font: normal normal 400 1rem/1.5rem var(--font-primary);
+    text-align: justify;
+    word-spacing: 1px;
+    letter-spacing: .1px;
+    text-indent: 3rem;
 }
 
 .title{
@@ -112,6 +138,10 @@ p{
     margin: 4rem 2rem 3rem;
     font: normal normal 500 3rem/3.6rem var(--font-primary);
     color: #444;
+}
+
+.img-wrapper{
+    overflow: hidden;
 }
 
 .img-wrapper img{
@@ -142,7 +172,9 @@ p{
     display: block;
     height: .3rem;
     width: 10rem;
+    border-radius: 1rem;
     background: var(--color-secundary);
+    margin: 1rem 0 1.5rem;
 }
 
 .form-default{
@@ -161,17 +193,6 @@ p{
 
 .column{
     flex-direction: column;
-}
-
-.img-wrapper{
-    overflow: hidden;
-}
-
-.img-wrapper img{
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    object-fit: cover;
 }
 
 #geral{

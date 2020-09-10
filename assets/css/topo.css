@@ -30,7 +30,7 @@
 #header1 .social-media i:hover{
     color: #fff;
     transform: scale(1.1);
-    animation: rotate .3s linear;
+    position: relative;
     
 }
 
@@ -41,6 +41,8 @@
 #buscar-no-site [type="text"]{
     margin: 1rem 0 0;
     float: left;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 #buscar-no-site [type="text"]:focus{
@@ -51,9 +53,10 @@
     float: right;
     background-color: var(--color-secundary);
     margin: 1rem 0 0;
-    padding: .35rem;
+    padding:.45rem .35rem;
     border-top-right-radius: 1rem;
-    border-bottom-right-radius: .1rem;
+    border-bottom-right-radius: 5px;
+
 }
 
 header{
@@ -62,6 +65,7 @@ header{
     position: sticky;
     top: 0;
     z-index: 30;
+    margin-top: .5rem;
 }
 
 /*Flexibilizando o site e colocando uma largura padrão de 990px*/
@@ -74,28 +78,33 @@ header nav{
 
 .menu{
     height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .menu .menu-item{
     float: left;
-    max-width: 14rem;
-    min-width: 8rem;
+    max-width: 11rem;
+    min-width: 7rem;
     height: 100%;
     text-transform: uppercase;
     text-align: center;
-    transition: all .4s;
+    transition: all .2s;
+    border-radius: 5px;
 }
 
 .menu-item a{
     display: block;
     height: 100%;
     width: 100%;
-    padding: .8rem 0;
+    padding: .8rem .5rem;
+    transition: all .2s;
 }
 
 .menu .menu-item h3{
     font: normal normal 800 1rem/1.2rem var(--font-secundary);
     color: var(--color-primary);
+    transition: all .5s;
 }
 
 .menu .menu-item:hover{
@@ -104,11 +113,11 @@ header nav{
 
 /*          item-menu active*/
 .menu .active{
-    background: #f0f0f5;
+    background: var(--color-primary) !important;
 }
 
 .menu .active h3{
-    color: var(--color-secundary);
+    color: #eee !important;
 }
 
 

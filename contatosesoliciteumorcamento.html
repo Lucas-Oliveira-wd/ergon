@@ -9,7 +9,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" type="text/css" href="assets/css/topo.css"/>
-    <link rel="stylesheet" type="text/css" href="assets/css/banner.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/geral.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/footer.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/soliciteumorcamento.css"/>
@@ -26,7 +25,6 @@
                 <a href=""><i class="fab fa-instagram"></i></a>
                 <a href=""><i class="fas fa-envelope"></i></a>
                 <a href=""><i class="fab fa-whatsapp"></i></a>
-                <a href=""><i class="fab fa-twitter"></i></a>
             </div>
             <div id="buscar-no-site">
                 <input id="search-site" type="text" placeholder="Buscar no site"> 
@@ -41,6 +39,11 @@
                     <li class="menu-item">
                         <a href="index.html">
                             <h3>Início</h3>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="empresa.html">
+                            <h3>A empresa</h3>
                         </a>
                     </li>
                     <li class="menu-item">
@@ -65,7 +68,7 @@
                     </li>
                     <li class="menu-item active">
                         <a href="contatosesoliciteumorcamento.html">
-                            <h3>Contatos e Solicite um Orçamento</h3>
+                            <h3>Solicite um Orçamento</h3>
                         </a>
                     </li>
                 </ul>
@@ -99,6 +102,26 @@
                 </div>
 
                 <div class="form-item">
+                    <label for="email">E-mail</label>
+                    <div class="input-camp">
+                        <input id="email" type="email">
+                    </div>
+                </div>
+
+                <div class="form-item">
+                    <label for="assunto">Assunto</label>
+                    <div class="input-camp">
+                        <select id="assunto" type="text" aria-placeholder="Escolha">
+                            <option value="Orçamento">Orçamento</option>
+                            <option value="Consultoria">Consultoria</option>
+                            <option value="Reforma">Reforma</option>
+                            <option value="Financiamento">Financiamento</option>
+                            <option value="Outros">Outros</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-item">
                     <label for="mensag">Mensagem</label>
                     <div class="input-camp">
                         <textarea id="mensag"></textarea>
@@ -112,11 +135,11 @@
     </section>
 
     <section id=geral>
-        <div class="container">
+        <div class="container flex">
             <section>
                 <div class="widget">
                     <div class="widgettitle">
-                        <div class=widgettitletext>Ultimos projetos realizados</div>
+                        <div class=widgettitletext>Depoimantos</div>
                         <div class="widgettitlebar"></div>
                     </div>
                     <div class="widgetbody flex">
@@ -126,7 +149,7 @@
                                 <div class="newspostedat">colaborador ou cliente</div>
                             </div>
                             <div class="widgetplayer">
-                                <video controls autoplay width="300">
+                                <video contro width="300">
                                     <source src="assets/videos/depoimentodecliente.webm" type="video/webm"/>
                                 </video>
                             </div>
@@ -147,7 +170,7 @@
                                 <div class="newspostedat">colaborador ou cliente</div>
                             </div>
                             <div class="widgetplayer">
-                                <video controls autoplay width="300">
+                                <video control width="300">
                                     <source src="assets/videos/depoimentodecliente.webm" type="video/webm"/>
                                 </video>
                             </div>
@@ -168,7 +191,7 @@
                                 <div class="newspostedat">colaborador ou cliente</div>
                             </div>
                             <div class="widgetplayer">
-                                <video controls autoplay width="300">
+                                <video controls width="300">
                                     <source src="assets/videos/depoimentodecliente.webm" type="video/webm"/>
                                 </video>
                             </div>
@@ -189,7 +212,7 @@
                                 <div class="newspostedat">colaborador ou cliente</div>
                             </div>
                             <div class="widgetplayer">
-                                <video controls autoplay width="300">
+                                <video controls width="300">
                                     <source src="assets/videos/depoimentodecliente.webm" type="video/webm"/>
                                 </video>
                             </div>

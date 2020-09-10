@@ -13,8 +13,8 @@
 /*      menu hamburguer     */
 .menu-hamburguer-serv{
     display: flex;
-    height: 3rem;
-    width: 3rem;
+    height: 5rem;
+    width: 5rem;
     flex-direction: column;
     justify-content: space-evenly;
     position: fixed;
@@ -23,6 +23,17 @@
     overflow: visible;
     z-index: 3;
     cursor: pointer;
+    border-radius: 4rem;
+    padding: 1rem;
+    transition: all 1s;
+}
+
+.menu-hamburguer-serv:hover{
+    background: var(--color-primary-9);
+}
+
+.menu-hamburguer-serv:hover .hamburguer-line{
+    background: #fff;
 }
 
 .menu-hamburguer-serv .hamburguer-line{
@@ -31,7 +42,20 @@
     background: #bbb;
     box-shadow: .05rem .1rem 1px #333;
     border-radius: .2rem;
-    transition: all 1s;
+    transition: all .5s;;
+}
+
+.menu-hamburguer-serv:hover #hamburguer-line3{
+    transform: translate(0,.45rem) rotate(45deg);
+    box-shadow: .05rem 0 .5px #333;
+}
+
+.menu-hamburguer-serv:hover #hamburguer-line1{
+    transform: translate(0,-.45rem) rotate(-45deg);
+}
+
+.menu-hamburguer-serv:hover #hamburguer-line2{
+    display: none;
 }
 
 /*      menu lateral de servicos        */
@@ -56,17 +80,30 @@
     transform: translate(0);
 }
 
-.show-menu-serv #hamburguer-line2{
+.show-menu-serv .hamburguer-line{
+    background: var(--color-primary);
+}
+
+.show-menu-serv .menu-hamburguer-serv #hamburguer-line2{
     display: none;
 }
 
-.show-menu-serv #hamburguer-line3{
-    transform: translate(0,.45rem) rotate(45deg);
+.show-menu-serv .menu-hamburguer-serv:hover  #hamburguer-line3{
+    transform: translate(0,.45rem) rotate(-45deg);
     box-shadow: .05rem 0 .5px #333;
 }
 
-.show-menu-serv #hamburguer-line1{
-    transform: translate(0,-.45rem) rotate(-45deg);
+.show-menu-serv .menu-hamburguer-serv:hover #hamburguer-line1{
+    transform: translate(0,-.45rem) rotate(45deg);
+}
+
+.show-menu-serv .menu-hamburguer-serv  #hamburguer-line3{
+    transform: translate(0,-.5rem) rotate(-45deg);
+    box-shadow: .05rem 0 .5px #333;
+}
+
+.show-menu-serv .menu-hamburguer-serv #hamburguer-line1{
+    transform: translate(0,.5rem) rotate(45deg);
 }
 
 .serv-menu-item{
