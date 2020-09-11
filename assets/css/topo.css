@@ -5,6 +5,7 @@
 #header1{
     background-color: var(--color-primary);
     height: 4rem;
+    position: static !important;
 }
 
 
@@ -82,7 +83,6 @@ header nav{
 }
 
 .menu .menu-item{
-    float: left;
     max-width: 16rem;
     min-width: 7rem;
     height: 100%;
