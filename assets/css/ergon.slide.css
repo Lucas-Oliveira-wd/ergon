@@ -1,6 +1,14 @@
+/*====================================================================================================
+=====                                                                                          =======
+=====               Este site foi feito por "Lucas Oliveira"                                   =======
+=====               Telefone (Whatsapp): (82) 98878-5978                                       =======
+=====               Instagram: @lucasoliveirawd                                                =======
+=====               E-mail: lukasforever02@gmail.com                                           =======
+=====                                                                                          =======
+=====================================================================================================*/
 
 #section-slide{
-    height: 100vh;
+    height: 90vh;
     top: 0;left: 0;right: 0;
     background: #777;
     position: relative;
@@ -56,7 +64,7 @@
 
 .swap-slide{
     position: absolute;
-    bottom: 20rem;
+    bottom: 16rem;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -103,6 +111,7 @@
     height: 10px;
     border-radius: 1rem;
     margin: 0 2px;
+    transition: all .5s;
 }
 
 .show-sl1 .slide-marker-content:nth-child(1), .show-sl2 .slide-marker-content:nth-child(2),

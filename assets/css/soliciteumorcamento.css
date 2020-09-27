@@ -1,3 +1,12 @@
+/*====================================================================================================
+=====                                                                                          =======
+=====               Este site foi feito por "Lucas Oliveira"                                   =======
+=====               Telefone (Whatsapp): (82) 98878-5978                                       =======
+=====               Instagram: @lucasoliveirawd                                                =======
+=====               E-mail: lukasforever02@gmail.com                                           =======
+=====                                                                                          =======
+=====================================================================================================*/
+
 #section-msg{
     background: var(--color-primary);
     margin-top: 2rem;
@@ -55,6 +64,24 @@
     margin-top:.5rem;
     font: normal normal 400 1rem/1.3rem var(--font-secundary);
     width: 100%;
+}
+
+.form-item input[type='email']{
+    background: #fff url(../img/icon-email.png) no-repeat scroll .5rem;
+    background-size: 4%;
+    padding-left: 2rem;
+}
+
+.form-item:nth-child(2) input[type='text']{
+    background: #FFF url(../img/icon-persona-c.png) no-repeat scroll .5rem;
+    background-size: 4%;
+    padding-left: 2rem;
+}
+
+.form-item:nth-child(3) input[type='text']{
+    background: #fff url(../img/icon-tel-c.png) no-repeat scroll .5rem;
+    background-size: 4%;
+    padding-left: 2rem;
 }
 
 .form-item input:focus{

@@ -1,3 +1,12 @@
+/*====================================================================================================
+=====                                                                                          =======
+=====               Este site foi feito por "Lucas Oliveira"                                   =======
+=====               Telefone (Whatsapp): (82) 98878-5978                                       =======
+=====               Instagram: @lucasoliveirawd                                                =======
+=====               E-mail: lukasforever02@gmail.com                                           =======
+=====                                                                                          =======
+=====================================================================================================*/
+
 const body = document.querySelector('body');
 
 // array com as classes para mostra os projetos
