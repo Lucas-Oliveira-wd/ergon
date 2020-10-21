@@ -10,7 +10,7 @@
 #section-presents{
     height: 48rem;
     padding: 2rem;
-    margin:2rem 0;
+    margin:2rem 0 0;
     background: var(--color-primary);
 }
 
@@ -38,15 +38,37 @@
     right: 0;
 }
 
+.met-eq{
+    display: flex;
+    justify-content: space-between;
+    max-width: 50rem;
+    margin: 0 auto;
+    background-color: var(--color-primary);
+}
+
+.bannertitle{
+    margin: 0 auto 3rem;
+    color: #eee;
+}
+
+.met-eq-item{
+    min-width: 6rem;
+    max-width: 11rem;
+    max-height: 7rem;
+}
+
+.banner5{
+    background-color: var(--color-primary);
+    padding-bottom: 2rem;
+}
+
 .banner5 .desc-full{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     height: 20rem;
-}
-
-.desc-full{
-    margin: 2rem 0;
+    max-width: 50rem;
+    margin: 2rem auto;
 }
 
 .desc-team{
@@ -65,10 +87,22 @@
     margin: 0 auto;
 }
 
-.banner5 .desc-team img{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.banner5 .desc-team:nth-child(1) .img-wrapper{
+    background: url(../img/foto-fel.jpg) center;
+    background-size: 17vmin;
+    background-position: center -2.5px;
+}
+
+.banner5 .desc-team:nth-child(2) .img-wrapper{
+    background: url(../img/foto-dam.jpg) center;
+    background-size: 17vmin;
+    background-position: center -2.5px;
+}
+
+.banner5 .desc-team:nth-child(3) .img-wrapper{
+    background: url(../img/foto-ric.jpg) center;
+    background-size: 17vmin;
+    background-position: center -2.5px;
 }
 
 .desc-team h6{
@@ -76,12 +110,16 @@
     position: absolute;
     top: 5.5rem;
     width: 100%;
+    color: #ddd;
+    font-size: .8rem;
 }
 
 .desc-team h4{
     width: 100%;
     position: absolute;
     top: 8rem;
+    color: #bbb;
+    font-size: 1rem;
 }
 
 .desc-team .social-media{
@@ -97,9 +135,19 @@
     color: var(--color-primary);
     font-size: 1.2rem;
     transition: all .2s;
+    color: #fff;
 }
 
 .desc-full .social-media i:hover{
     color: var(--color-primary-lighter);
     transform: scale(1.05);
+}
+
+.banner-efect-frase p{
+    color: #ccc;
+    text-align: right;
+}
+
+.banner-efect-frase p:nth-child(1){
+    font-size: 1.2rem;
 }
