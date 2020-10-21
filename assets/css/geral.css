@@ -33,15 +33,15 @@ body{
     --font-primary: Montserrat, sans-serif;
     --font-secundary: Roboto, sans-serif;
     --font-action: Lato, sans-serif;
-    --color-primary-1: #00001e10;
-    --color-primary-2: #00001e20;
-    --color-primary-3: #00001e30;
-    --color-primary-4: #00001e40;
-    --color-primary-5: #00001e50;
-    --color-primary-6: #00001e60;
-    --color-primary-7: #00001e70;
-    --color-primary-8: #00001e80;
-    --color-primary-9: #00001e90;
+    --color-primary-1:rgba(0, 0, 30, 0.1);
+    --color-primary-2:rgba(0, 0, 30, 0.2);
+    --color-primary-3:rgba(0, 0, 30, 0.3);
+    --color-primary-4:rgba(0, 0, 30, 0.4);
+    --color-primary-5:rgba(0, 0, 30, 0.5);
+    --color-primary-6:rgba(0, 0, 30, 0.6);
+    --color-primary-7:rgba(0, 0, 30, 0.7);
+    --color-primary-8:rgba(0, 0, 30, 0.8);
+    --color-primary-9:rgba(0, 0, 30, 0.9);
     --color-primary: #00001e;
     --color-primary-lighter: #00007d;
     --color-primary-almost-white: #ececff;
@@ -179,6 +179,11 @@ p{
     border: none;
     font: normal normal bold 1.1rem/1.5rem var(--font-action);
     border-radius: .3rem;
+    box-shadow: .1rem .2rem 1rem #00000080;
+}
+
+.bt-p:hover{
+    background: linear-gradient(to bottom,var(--color-primary-lighter),var(--color-primary));
     box-shadow: .1rem .2rem 1rem #00000080;
 }
 

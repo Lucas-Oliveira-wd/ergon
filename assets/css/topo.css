@@ -10,30 +10,30 @@
 /*Cabeçalho do site*/
 
 #header1{
-    background: var(--color-primary);
-    height: 4rem;
+    background: #000;
+    height: 3rem;
     position: static !important;
     z-index: 1;
 }
 
 
 .logo{
-    height: 4rem;
+    height: 100%;
     float: left;
-    max-width: 12.2rem;
+    max-width: 9.25rem;
 }
 
 #header1 .social-media{
    display: inline-block;
    height: 100%;
-   margin: 0 0 0 25rem; 
+   margin: 0 0 0 30rem; 
 }
 
 #header1 .social-media i{
     float: righ;
     color: #eee;
-    margin: 1rem .5rem;
-    font-size: 1.5rem;
+    margin: .8rem .5rem;
+    font-size: 1.2rem;
     transition: all .4s;
 }
 
@@ -49,11 +49,14 @@
 }
 
 #buscar-no-site input[type="text"]{
-    margin: 1rem 0 0;
+    margin: .6rem 0 0;
     float: left;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border: .1rem solid transparent;
+    font-size: .8rem;
+    padding: .2rem .4rem;
+    min-width: 10rem;
 }
 
 #buscar-no-site input[type="text"]:focus{
@@ -63,15 +66,14 @@
 #buscar-no-site .search{
     float: right;
     background-color: var(--color-secundary);
-    margin: 1rem 0 0;
-    padding:.46rem .35rem;
+    margin: .6rem 0 0;
+    padding:.27rem .35rem;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 5px;
-
 }
 
 header{
-    height: 3.5rem;
+    height: 2.5rem;
     background: #ffffff70 url('../img/fundo-tijolinho.jpg');
     background-position: left top;
     background-size: 100% 780%;
@@ -88,20 +90,16 @@ header .container::before{
     content: '';
     position: absolute;
     width: 100%;
-    height: 3.5rem;
+    height: 2.5rem;
     right: 0;
     background: #ffffff70;
     z-index: -1;
 }
 
-/*Flexibilizando o site e colocando uma largura padrão de 990px*/
-
 header nav{
     height: 100%;
     background: transparent;
 }
-
-/*Centralizando a logomarca*/
 
 .menu{
     height: 100%;
@@ -132,117 +130,25 @@ header nav{
 }
 
 .menu .menu-item h3{
-    font: normal normal 800 1rem/1.2rem var(--font-secundary);
+    font: normal normal 800 .95rem/1.2rem var(--font-secundary);
     color: var(--color-primary);
-    transition: all .5s;
+    transition: all .3s;
 }
 
 .menu .menu-item:hover{
-    background: #f0f0f590;
+    background: #d0d0d590;
 }
 
 /*          item-menu active*/
 .menu .active{
-    background: var(--color-primary-9) !important;
+    background: var(--color-primary-8) !important;
 }
 
 .menu .active h3{
-    color: #eee !important;
+    color: #fff !important;
 }
 
 
 .menu .menu-item:hover h3{
-    color: var(--color-secundary-8);
-}
-
-#home-top{
-    height: 100vh;
-    display: none;
-}
-
-.home-top-division{
-    position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
-}
-
-#home-top-1{
-    background-color: #999;
-    z-index: 3;
-    transform: skew(65deg,0deg) translate(-80vw,0);
-}
-
-#home-top-2{
-    background-color: var(--color-primary);
-    z-index: 2;
-    transform: skew(-65deg,0deg) translate(-80vw,0);
-}
-
-#home-top .img-wrapper{
-    position: absolute;
-    z-index: 4;
-    top: 4rem;
-    left: 4rem;
-    height: 7rem;
-}
-
-#home-top .main-menu{
-    position: absolute;
-    z-index: 4;
-    top: 10rem;
-    right: 7rem;
-    bottom: 10rem;
-}
-
-#home-top .main-menu-item{
-    font: normal normal 400 1.8rem/1.5rem var(--font-secundary);
-    max-width: 16rem;
-    text-align: center;
-    margin: 1.2rem auto;
-    transition: all .5s;
-}
-
-#home-top .main-menu-item a{
-    color: #777;
-}
-
-#home-top .active a{
-    color: var(--color-secundary);
-}
-
-#home-top .active{
-    color: var(--color-secundary);
-    list-style: disclosure-closed;
-}
-
-#home-top .main-menu-item:hover{
-    list-style: disclosure-closed;
-    color: var(--color-secundary);
-}
-
-#home-top .main-menu-item a:hover{
-    color: var(--color-secundary);
-}
-
-#home-top .main-menu-item a:active{
-    color: var(--color-secundary);
-}
-
-#home-top .social-media{
-    position: absolute;
-    bottom: 4rem; left: 2rem;
-    z-index: 4;
-    display: flex;
-    justify-content: space-evenly;
-    width: 20rem;
-}
-
-#home-top .social-media i{
-    font-size: 2rem;
-    color: var(--color-primary);
-    transition: all .5s;
-}
-
-#home-top .social-media i:hover{
-    color: var(--color-secundary);
-    transform: scale(1.2);
+    color: #000;
 }

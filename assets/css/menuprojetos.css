@@ -24,15 +24,15 @@
     display: flex;
     justify-content: center;
     padding: 0 5rem;
-    height: 15rem;
+    height: 12.3rem;
     overflow: hidden;
 }
 
 .menuprojetos .menuproj-item{
     cursor: pointer;
-    padding: 3rem 0 0 0;
+    padding: 2rem 0 0 0;
     transition: all 1s;
-    min-width: 10rem;
+    min-width: 9rem;
 }
 
 .menuproj-item:hover{
@@ -40,15 +40,15 @@
 }
 
 .menuprojetos .fundoimgprojetos{
-width: 6rem;
-height: 6rem;
+width: 5rem;
+height: 5rem;
 padding: 0;
 transition: all 500ms;
 margin: 0 auto;
 }
 
 .menuprojetos h2{
-    font-size: .8rem;
+    font-size: .7rem;
     text-align: center;
     text-transform: uppercase;
     text-shadow: 1px 1px 0 #3e3e3e;
@@ -57,23 +57,8 @@ margin: 0 auto;
     margin-top: 1rem;
 }
 
-.menuprojetos #h1{
-    color: var(--color-proj-1);
-}
-.menuprojetos #h2{
-    color: var(--color-proj-2);
-}
-.menuprojetos #h3{
-    color: var(--color-proj-3);
-}
-.menuprojetos #h4{
-    color: var(--color-proj-4);
-}
-.menuprojetos #h5{
-    color: var(--color-proj-5);
-}
-.menuprojetos #h6{
-    color: var(--color-proj-6);
+.menuprojetos h2{
+    color: #222;
 }
 
 /*     barra que se modifica       */
@@ -96,29 +81,10 @@ margin: 0 auto;
     opacity: 1;
 }
 
-.menuproj-item:nth-child(1):hover .menu-proj-bar .menu-proj-bar-content{
-    background: var(--color-proj-1);
+.menuproj-item:hover .menu-proj-bar .menu-proj-bar-content{
+    background: #222;
 }
 
-.menuproj-item:nth-child(2):hover .menu-proj-bar .menu-proj-bar-content{
-    background: var(--color-proj-2);
-}
-
-.menuproj-item:nth-child(3):hover .menu-proj-bar .menu-proj-bar-content{
-    background: var(--color-proj-3);
-}
-
-.menuproj-item:nth-child(4):hover .menu-proj-bar .menu-proj-bar-content{
-    background: var(--color-proj-4);
-}
-
-.menuproj-item:nth-child(5):hover .menu-proj-bar .menu-proj-bar-content{
-    background: var(--color-proj-5);
-}
-
-.menuproj-item:nth-child(6):hover .menu-proj-bar .menu-proj-bar-content{
-    background: var(--color-proj-6);
-}
 /*====================================================================================
                 borda inferior que mudará de cor
 =====================================================================================*/
@@ -131,6 +97,7 @@ margin: 0 auto;
     border-bottom-right-radius: 80%;
     border-bottom-left-radius: 80%;
     transition: background 1s;
+    background-color: #696969;
 }
 
 /*==================================================================
@@ -142,11 +109,7 @@ margin: 0 auto;
 .show-proj-combinc .menuproj-item:nth-child(5),.show-proj-spda .menuproj-item:nth-child(6){
     position: relative;
     transform: scale(1.4);
-    background: #ddd;
-}
-
-.show-proj-arq .menuproj-item:first-child .menu-proj-bar-content{
-    background: var(--color-proj-1);
+    background: #dddddd60;
 }
 
 .show-proj-arq .menuproj-item:first-child .menu-proj-bar,
@@ -174,64 +137,4 @@ margin: 0 auto;
 .show-proj-combinc .menuproj-item:nth-child(5) .bar-content-2,
 .show-proj-spda .menuproj-item:nth-child(6) .bar-content-2{
     transform: rotate(25deg) translate(-.3rem,-.1rem);
-}
-
-.show-proj-arq #menu-proj-bar-bottom{
-    background: var(--color-proj-1)
-}
-
-/*==================================================================
-                show-proj-est
-====================================================================*/
-.show-proj-est .menuproj-item:nth-child(2) .menu-proj-bar-content{
-    background: var(--color-proj-2);
-}
-
-.show-proj-est #menu-proj-bar-bottom{
-    background: var(--color-proj-2)
-}
-
-/*==================================================================
-                show-proj-hidro
-====================================================================*/
-.show-proj-hidro .menuproj-item:nth-child(3) .menu-proj-bar-content{
-    background: var(--color-proj-3);
-}
-
-.show-proj-hidro #menu-proj-bar-bottom{
-    background: var(--color-proj-3)
-}
-
-/*==================================================================
-                show-proj-elet
-====================================================================*/
-
-.show-proj-elet .menuproj-item:nth-child(4) .menu-proj-bar-content{
-    background: var(--color-proj-4);
-}
-
-.show-proj-elet #menu-proj-bar-bottom{
-    background: var(--color-proj-4)
-}
-
-/*==================================================================
-                show-proj-combinc
-====================================================================*/
-.show-proj-combinc .menuproj-item:nth-child(5) .menu-proj-bar-content{
-    background: var(--color-proj-5);
-}
-
-.show-proj-combinc #menu-proj-bar-bottom{
-    background: var(--color-proj-5)
-}
-
-/*==================================================================
-                show-proj-spda
-====================================================================*/
-.show-proj-spda .menuproj-item:nth-child(6) .menu-proj-bar-content{
-    background: var(--color-proj-6);
-}
-
-.show-proj-spda #menu-proj-bar-bottom{
-    background: var(--color-proj-6)
 }
