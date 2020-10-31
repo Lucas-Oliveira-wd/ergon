@@ -11,7 +11,7 @@ const body = document.querySelector('body');
 
 // array com as classes para mostra os projetos
 let listClProj = ['show-proj-arq','show-proj-hidro','show-proj-hidra','show-proj-combinc',
-'show-proj-elet','show-proj-est','show-proj-inf','show-proj-spda'];
+'show-proj-elet','show-proj-est','show-proj-inf','show-proj-spda','show-proj-orc'];
 
 /*==========================================================================================
                         desta linha para baixo é para mostrar os projetos
@@ -124,6 +124,20 @@ function sSPDA(){
 
         else if (listClProj[i] === listClProj[7] && body.classList.contains(listClProj[7])!==true)
         body.classList.add(listClProj[7]);
+
+        else body.classList.remove(listClProj[i]);
+    }
+}
+
+// ORÇAMENTÁRIO
+
+function sOrc(){
+    for(let i in listClProj){
+        if (listClProj[i] === listClProj[8] && body.classList.contains(listClProj[8]) === true)
+        body.classList.remove(listClProj[8]);
+
+        else if (listClProj[i] === listClProj[8] && body.classList.contains(listClProj[8])!==true)
+        body.classList.add(listClProj[8]);
 
         else body.classList.remove(listClProj[i]);
     }

@@ -76,13 +76,15 @@
                                     show-proj-arq
 ===================================================================================================================*/
 .show-proj-arq #secarq,.show-proj-est #secest, .show-proj-hidro #sechidro,
-.show-proj-elet #secelet, .show-proj-combinc #seccomb, .show-proj-spda #secspda{
+.show-proj-elet #secelet, .show-proj-combinc #seccomb, .show-proj-spda #secspda,
+.show-proj-orc #secorc{
     display: block;
 }
 
 .show-proj-arq .place-hoder-proj-desc, .show-proj-hidro .place-hoder-proj-desc,
 .show-proj-est .place-hoder-proj-desc, .show-proj-elet .place-hoder-proj-desc,
-.show-proj-combinc .place-hoder-proj-desc, .show-proj-spda .place-hoder-proj-desc{
+.show-proj-combinc .place-hoder-proj-desc, .show-proj-spda .place-hoder-proj-desc,
+.show-proj-orc .place-hoder-proj-desc{
     display: none;
 }
 
