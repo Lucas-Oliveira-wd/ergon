@@ -160,7 +160,7 @@ header nav{
 
 .menu-item:nth-child(3) .fa-sort-down{
     color: #eee;
-    margin: 0 4px 5px;
+    margin: 0 0px 5px 4px;
 }
 
 .projetos-div-drop-list li:hover .projetos-drop-list-pt2{
@@ -171,7 +171,7 @@ header nav{
     position: absolute;
     background: var(--color-primary-8);
     text-align: left;
-    width: 16rem;
+    width: 14rem;
     display: none;
 }
 
@@ -185,11 +185,14 @@ header nav{
 
 .projetos-div-drop-list a{
     display: block;
+    padding: .3rem .5rem;
 }
 
 .projetos-div-drop-list h3{
-    margin: 10px 0;
+    margin: 2px 0 !important;
     display: inline-block;
+    font-size: .8rem !important;
+    color: #eee !important;
 }
 
 .projetos-div-drop-list a:hover h3{
@@ -199,15 +202,22 @@ header nav{
 .projetos-drop-list-pt2{
     position: absolute;
     background: var(--color-primary-8);
-    left: 16rem;
+    left: 14rem;
     top: 0;
     display: none;
-    width: 15.5rem;
+}
+
+.projetos-div-drop-list li:nth-child(2) .projetos-drop-list-pt2{
+    width: 13.5rem;
+}
+
+.projetos-div-drop-list li:nth-child(3) .projetos-drop-list-pt2{
+    width: 18.8rem;
 }
 
 .projetos-div-drop-list .fa-caret-right{
     color: #eee;
     float: right;
     display: inline;
-    margin-top: 10px;
+    margin: 3px 0 4px;
 }
