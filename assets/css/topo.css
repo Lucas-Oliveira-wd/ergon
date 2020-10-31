@@ -10,29 +10,29 @@
 /*Cabeçalho do site*/
 
 #header1{
-    background: #000;
-    height: 3rem;
+    background: var(--color-primary);
+    height: 4rem;
     position: static !important;
     z-index: 1;
 }
 
 
 .logo{
-    height: 100%;
+    height: 80%;
     float: left;
-    max-width: 9.25rem;
+    max-width: 10rem;
+    margin: 6px 0;
 }
 
 #header1 .social-media{
    display: inline-block;
    height: 100%;
-   margin: 0 0 0 30rem; 
+   margin: 0 0 0 35rem; 
 }
 
 #header1 .social-media i{
-    float: righ;
     color: #eee;
-    margin: .8rem .5rem;
+    margin: .4rem .5rem;
     font-size: 1.2rem;
     transition: all .4s;
 }
@@ -123,16 +123,17 @@ header nav{
     height: 100%;
     width: 100%;
     justify-content: center;
-    padding: 0 10px;
+    padding: 0 30px;
     align-items: center;
     transition: all .2s;
     background: transparent;
 }
 
 .menu .menu-item h3{
-    font: normal normal 800 .95rem/1.2rem var(--font-secundary);
+    font: normal normal 800 1rem/1.2rem var(--font-secundary);
     color: var(--color-primary);
     transition: all .3s;
+    word-spacing: 2px;
 }
 
 .menu .menu-item:hover{
@@ -141,7 +142,7 @@ header nav{
 
 /*          item-menu active*/
 .menu .active{
-    background: var(--color-primary-8) !important;
+    background: var(--color-primary) !important;
 }
 
 .menu .active h3{
@@ -151,4 +152,62 @@ header nav{
 
 .menu .menu-item:hover h3{
     color: #000;
+}
+
+.menu-item{
+    position: relative;
+}
+
+.menu-item:nth-child(3) .fa-sort-down{
+    color: #eee;
+    margin: 0 4px 5px;
+}
+
+.projetos-div-drop-list li:hover .projetos-drop-list-pt2{
+    display: block;
+}
+
+.projetos-div-drop-list{
+    position: absolute;
+    background: var(--color-primary-8);
+    text-align: left;
+    width: 16rem;
+    display: none;
+}
+
+.menu-item:hover .projetos-div-drop-list{
+    display: block;
+}
+
+.projetos-div-drop-list li{
+    position: relative;
+}
+
+.projetos-div-drop-list a{
+    display: block;
+}
+
+.projetos-div-drop-list h3{
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.projetos-div-drop-list a:hover h3{
+    text-decoration: underline;
+}
+
+.projetos-drop-list-pt2{
+    position: absolute;
+    background: var(--color-primary-8);
+    left: 16rem;
+    top: 0;
+    display: none;
+    width: 15.5rem;
+}
+
+.projetos-div-drop-list .fa-caret-right{
+    color: #eee;
+    float: right;
+    display: inline;
+    margin-top: 10px;
 }

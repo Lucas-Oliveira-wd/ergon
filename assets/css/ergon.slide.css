@@ -8,7 +8,7 @@
 =====================================================================================================*/
 
 #section-slide{
-    height: 18rem;
+    height: 22rem;
     top: 0;left: 0;right: 0;
     background: #777;
     position: relative;
@@ -104,6 +104,7 @@
     display: flex;
     justify-content: space-between;
     z-index: 5;
+    width: 4rem;
 }
 
 .slide-marker-content{
@@ -111,7 +112,6 @@
     width: 10px;
     height: 10px;
     border-radius: 1rem;
-    margin: 0 2px;
     transition: all .5s;
 }
 
@@ -120,4 +120,13 @@
 .show-sl5 .slide-marker-content:nth-child(5), .show-sl6 .slide-marker-content:nth-child(6),
 .show-sl7 .slide-marker-content:nth-child(7), .show-sl8 .slide-marker-content:nth-child(8){
     background: #fff;
+}
+
+.slide-marker-content:nth-child(5), .slide-marker-content:nth-child(6),
+.slide-marker-content:nth-child(7), .slide-marker-content:nth-child(8){
+    display: none;
+}
+
+#main-frase{
+    height: 15rem;
 }
