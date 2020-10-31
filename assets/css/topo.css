@@ -158,9 +158,13 @@ header nav{
     position: relative;
 }
 
-.menu-item:nth-child(3) .fa-sort-down{
-    color: #eee;
+.menu-item .fa-sort-down{
+    color: var(--colo[]);
     margin: 0 0px 5px 4px;
+}
+
+.active .fa-sort-down{
+    color: #eee;
 }
 
 .projetos-div-drop-list li:hover .projetos-drop-list-pt2{

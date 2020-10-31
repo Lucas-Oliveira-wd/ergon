@@ -32,9 +32,9 @@ function slideFixRig(){
             //removendo left e adicionando right no slide 2
             setTimeout(function(){document.querySelector('.slide-wrapper:nth-child(2)').classList.add('transl-right')},int);
             setTimeout(function(){document.querySelector('.slide-wrapper:nth-child(2)').classList.remove('transl-left')},int);
-            //removendo right e adicionando left no slide 8
-            document.querySelector('.slide-wrapper:nth-child(8)').classList.remove('transl-right');
-            document.querySelector('.slide-wrapper:nth-child(8)').classList.add('transl-left');
+            //removendo right e adicionando left no slide 4
+            document.querySelector('.slide-wrapper:nth-child(4)').classList.remove('transl-right');
+            document.querySelector('.slide-wrapper:nth-child(4)').classList.add('transl-left');
 
         } else if (sbody.classList.contains(slclasses[1])) {
             //removendo left e right do slide 2
@@ -81,8 +81,8 @@ function slideFixLef(){
         document.querySelector('.slide-wrapper:nth-child(2)').classList.add('transl-right');
         document.querySelector('.slide-wrapper:nth-child(2)').classList.remove('transl-left');
         //removendo right e adicionando left no slide 8
-        setTimeout(function(){document.querySelector('.slide-wrapper:nth-child(8)').classList.remove('transl-right')},int);
-        setTimeout(function(){document.querySelector('.slide-wrapper:nth-child(8)').classList.add('transl-left')},int);
+        setTimeout(function(){document.querySelector('.slide-wrapper:nth-child(4)').classList.remove('transl-right')},int);
+        setTimeout(function(){document.querySelector('.slide-wrapper:nth-child(4)').classList.add('transl-left')},int);
 
     } else if (sbody.classList.contains(slclasses[1])) {
         //removendo left e right do slide 2
