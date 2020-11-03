@@ -46,9 +46,15 @@
 }
 
 .bannertitle{
-    margin: 0 auto 3rem;
-    color: #eee;
+    margin: 3rem auto .5rem;
+    color: #444;
     text-align: center;
+}
+
+.banner5 .bannertitle{
+    color: #eee;
+    margin: 0;
+    padding: 0 0 2rem;
 }
 
 .met-eq-item{
@@ -150,4 +156,8 @@
 
 .banner-efect-frase p:nth-child(1){
     font-size: 1.2rem;
+}
+
+.banner4{
+    margin-bottom: 2rem;
 }
