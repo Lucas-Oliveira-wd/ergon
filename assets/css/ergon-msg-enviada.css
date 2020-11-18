@@ -1,6 +1,23 @@
-.msg-eviada{
+#section-msg-enviada{
     height: 100vh;
-    color: #009f00;
-    padding: 50%;
-    font-size: 2rem;
 }
+
+.msg-eviada{
+    background-color: #009f00;
+    margin: 2rem auto;
+    width: 30rem;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 2rem;
+    font-family: var(--font-primary);
+    font-weight: 600;
+    color: #eee;
+}
+
+.ergon-agradece{
+    font-family: var(--font-secundary);
+    font-size: 1.2rem;
+    color: #444;
+    text-align: center;
+}
+

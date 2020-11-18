@@ -120,6 +120,7 @@
     letter-spacing: 1px;
     width: 40%;
     max-height: 2.8rem;
+    cursor: pointer;
 }
 
 #button-form-contato:hover{

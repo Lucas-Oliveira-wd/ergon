@@ -225,7 +225,13 @@ if(isset($_POST['email']) && !empty($_POST['email'])){
                 "X=Msilrt:PHP/".phpversion();
 
     if(mail($to, $subject, $body, $header)){
-        echo('<p class="msg-eviada"> Mensagem enviada!</p>');
+        echo('<section id="section-msg-enviada">
+        <div class="container">
+            <p class="msg-eviada"> Mensagem enviada!</p>
+            <p class="ergon-agradece">A Ergon agradece o seu contato!
+                Sua mensagem será respondida o mais breve possível</p>
+        </div>        
+    </section>');
     } else {
         echo('Ocorreu um erro durante o envio!');
     }
