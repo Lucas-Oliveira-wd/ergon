@@ -36,7 +36,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/topo.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/geral.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/footer.css"/>
-    <link rel="stylesheet" type="text/css" href="assets/css/soliciteumorcamento.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/ergon-msg-enviada.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/animation.css"/>
 </head>
 <body>
@@ -202,183 +202,73 @@
         </div>
     </header>
 
-<!--        begins of the form-section              -->
-    <section id="section-msg">
-        <div class="container">
-            <form method="post" action="ergon-form-contato.php" class="form-default">
-                <div class="title">
-                    <h2>Contate-nos</h2>
-                    <div class="title-bar"></div>
-                </div>
+<?php
 
-                <div class="form-item">
-                    <label for="name">Nome Completo</label>
-                    <div class="input-camp">
-                        <span></span>
-                        <input name="name" id="name" type="text">
-                    </div>
-                </div>
-
-                <div class="form-item">
-                    <label for="fone">Telefone</label>
-                    <div class="input-camp">
-                        <input name="phone" placeholder="Ex: (DDD) 99999-9999" id="fone" type="text">
-                        <span id="span-whats">
-                            De preferência com Whatsapp!
-                        </span>
-                    </div>
-                </div>
-
-                <div class="form-item">
-                    <label for="email">E-mail</label>
-                    <div class="input-camp">
-                        <input name="email" id="email" type="email">
-                    </div>
-                </div>
-
-                <div class="form-item">
-                    <label for="assunto">Assunto</label>
-                    <div class="input-camp">
-                        <select name="assunto" id="assunto">
-                            <option value="Orçamento">Orçamento</option>
-                            <option value="Consultoria">Consultoria</option>
-                            <option value="Reforma">Reforma</option>
-                            <option value="Financiamento">Financiamento</option>
-                            <option value="Outros">Outros</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-item">
-                    <label for="mensag">Mensagem</label>
-                    <div class="input-camp">
-                        <textarea name='msg' id="mensag"></textarea>
-                    </div>
-                </div>
-
-                <input type="submit" id="button-form-contato" name='Enviar'>
-
-            </form>
-        </div>
-    </section>
+$name = $phone = $email = $assunto = $msg = '';
     
-<!--        end of the form-section              -->
+if(isset($_POST['email']) && !empty($_POST['email'])){
 
-    <section id=geral>
-        <div class="container flex">
-            <section>
-                <div class="widget">
-                    <div class="widgettitle">
-                        <div class=widgettitletext>Depoimantos</div>
-                        <div class="widgettitlebar"></div>
-                    </div>
-                    <div class="widgetbody flex">
-                        <article>
-                            <div class="newsdata">
-                                <div class="newspostedat">colaborador ou cliente</div>
-                            </div>
-                            <div class="widgetplayer">
-                                <video controls poster="assets/img/engenheiros.jpg" width="300">
-                                    <source src="assets/videos/depoimentodecliente.webm" type="video/webm"/>
-                                </video>
-                            </div>
-                            <div class="newstitle">
-                                colaborador ou cliente 1
-                            </div>
-                            <div class="newsresume">
-                                asf a ajfposiaufoi isdjfoia jlçsadfj oij fiu 
-                                jafsklfjnao iunuio hna opiuwn on oi noiawne inlauion çon tawu oçnsyzçihoiznçln aljh ohoi\f oinhiow ho 
-                                 io jhgopihz o no uho irhyo noijzgo inz~j io hoi hneoí jh p\in ioj jaioç jporia joirg ao 
-                                 oij opiahrgonfjopighrjo
-                            </div>
-                        </article>
-                        <article>
-                            <div class="newsdata">
-                                <div class="newspostedat">colaborador ou cliente</div>
-                            </div>
-                            <div class="widgetplayer">
-                                <video controls poster="assets/img/engenheiros.jpg" width="300">
-                                    <source src="assets/videos/depoimentodecliente.webm" type="video/webm"/>
-                                </video>
-                            </div>
-                            <div class="newstitle">
-                                colaborador ou cliente 2
-                            </div>
-                            <div class="newsresume">
-                                asf a ajfposiaufoi isdjfoia jlçsadfj oij fiu 
-                                jafsklfjnao iunuio hna opiuwn on oi noiawne inlauion çon tawu oçnsyzçihoiznçln aljh ohoi\f oinhiow ho 
-                                 io jhgopihz o no uho irhyo noijzgo inz~j io hoi hneoí jh p\in ioj jaioç jporia joirg ao 
-                                 oij opiahrgonfjopighrjo
-                            </div>
-                        </article>
-                        <article>
-                            <div class="newsdata">
-                                <div class="newspostedat">colaborador ou cliente</div>
-                            </div>
-                            <div class="widgetplayer">
-                                <video controls poster="assets/img/engenheiros.jpg" width="300">
-                                    <source src="assets/videos/depoimentodecliente.webm" type="video/webm"/>
-                                </video>
-                            </div>
-                            <div class="newstitle">
-                                colaborador ou cliente 3
-                            </div>
-                            <div class="newsresume">
-                                asf a ajfposiaufoi isdjfoia jlçsadfj oij fiu 
-                                jafsklfjnao iunuio hna opiuwn on oi noiawne inlauion çon tawu oçnsyzçihoiznçln aljh ohoi\f oinhiow ho 
-                                 io jhgopihz o no uho irhyo noijzgo inz~j io hoi hneoí jh p\in ioj jaioç jporia joirg ao 
-                                 oij opiahrgonfjopighrjo
-                            </div>
-                        </article>
-                        <article>
-                            <div class="newsdata">
-                                <div class="newspostedat">colaborador ou cliente</div>
-                            </div>
-                            <div class="widgetplayer">
-                                <video controls poster="assets/img/engenheiros.jpg" width="300">
-                                    <source src="assets/videos/depoimentodecliente.webm" type="video/webm"/>
-                                </video>
-                            </div>
-                            <div class="newstitle">
-                                colaborador ou cliente 4
-                            </div>
-                            <div class="newsresume">
-                                asf a ajfposiaufoi isdjfoia jlçsadfj oij fiu 
-                                jafsklfjnao iunuio hna opiuwn on oi noiawne inlauion çon tawu oçnsyzçihoiznçln aljh ohoi\f oinhiow ho 
-                                 io jhgopihz o no uho irhyo noijzgo inz~j io hoi hneoí jh p\in ioj jaioç jporia joirg ao 
-                                 oij opiahrgonfjopighrjo
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </section>
-            <aside>
-                <div class="widget">
-                    <div class="widgettitle">
-                        <div class=widgettitletext>Alguma coisa</div>
-                        <div class="widgettitlebar"></div>
-                    </div>
-                    <div class="widgetbody flex">
-                        <div class="departamentssquare"></div>
-                        <div class="departamentssquare"></div>
-                        <div class="departamentssquare"></div>
-                        <div class="departamentssquare"></div>
-                    </div>
-                </div>
-                <div class="widget">
-                    <div class="widgettitle">
-                        <div class=widgettitletext>Alguma coisa</div>
-                        <div class="widgettitlebar"></div>
-                    </div>
-                    <div class="widgetbody">
-                        asdfasdg ldsafhiuah oewiro aih iaofi h oiasjfo ihre i hoiafsn hio h kfn iudashoi kj bfiuas
-                    </div>
-                </div>
-            </aside>
+    $name = addslashes($_POST["name"]);
+    $phone = addslashes($_POST["phone"]);
+    $email = addslashes($_POST["email"]);
+    $assunto = addslashes($_POST["assunto"]);
+    $msg = addslashes($_POST["msg"]);
 
-        </div>
-    </section>
-    <footer>
+    $to = 'contato@ergoneng.com';
+    $subject = 'Contato - Ergon Engenharia';
+    $body = 'Nome: '.$name. "\r\n".
+            "Email: ".$email. "\r\n".
+            "Telefone: ".$phone. "\r\n".
+            "Mensagem: ".$msg;
+    $header = "From:lukasforever02@gmail.com"."\r\n".
+                "Reply-To:".$email."\r\n".
+                "X=Msilrt:PHP/".phpversion();
+
+    if(mail($to, $subject, $body, $header)){
+        echo('<p class="msg-eviada"> Mensagem enviada!</p>');
+    } else {
+        echo('Ocorreu um erro durante o envio!');
+    }
+}
+    //define variables and set to empty values
+    $nameErr = $phoneErr = $emailErr = '';
+    $name = $phone = $email = $assunto = $msg = '';
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        if (empty($_POST['name'])){
+            $nameErr = 'Digite um nome';
+        } else {
+        }
+
+        if (empty($_POST['phone'])){
+            $emailErr = 'Digite um número de telefone';
+        } else {
+            $phone = test_input($_POST["phone"]);
+        }
+
+        if (empty($_POST['email'])){
+            $email = '';
+        } else {
+            $email = test_input($_POST["email"]);
+        }
+        $assunto = test_input($_POST["assunto"]);
+
+        if (empty($_POST['msg'])){
+            $msgErr = 'Digite uma mensagem';
+        } else {
+            $msg = test_input($_POST["msg"]);
+        }
+    }
+
+    function test_input($data){
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
+?>
+
+<footer>
         <div class="container column">
             <div class="footermenu">
                 <div class="fm1"></div>
